@@ -11,8 +11,8 @@ html {
     --text-title-color: #3d5672;
     --text-color: rgb(41, 41, 41); /*#243f53;*/
     --title-height: calc(500px + 5vw);
-    --separator-height: calc(300px + 7vw);
-    --separator-height-img: calc(270px + 5vw);
+    --separator-height: clamp(200px, 200px + 10vw, 550px);
+    --separator-height-img: calc(var(--separator-height) * 0.9 - 20px);
     --center-width: 1200px;
     color: var(--text-color);
 }
@@ -226,7 +226,7 @@ button {
     bottom: 0px;
     width: 100%;
     height: 100%;
-}resume_back2_opt
+}
 
 .load-lazy {
     opacity: 0;
@@ -347,7 +347,6 @@ button {
     top: 0px;
     left: 0px;
     width: 100%;
-    margin: 20px 0px 20px 0px;
     height: var(--separator-height);
     
     background-position: left;
@@ -356,12 +355,12 @@ button {
     background-attachment: fixed;
     
     -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: center left;
+    -webkit-mask-position: left center;
     -webkit-mask-size: auto var(--separator-height-img);
     -webkit-mask-origin: view-box;
 
     mask-repeat: no-repeat;
-    mask-position: center left;
+    mask-position: left center;
     mask-size: auto var(--separator-height-img);
     mask-origin: view-box;
 }
@@ -411,7 +410,6 @@ button {
     top: 0px;
     left: 0px;
     width: 100%;
-    margin: 20px 0px 20px 0px;
     height: var(--separator-height);
     
     background-position: left;
@@ -420,12 +418,12 @@ button {
     background-attachment: fixed;
     
     -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: bottom left;
+    -webkit-mask-position: left bottom;
     -webkit-mask-size: auto var(--separator-height-img);
     -webkit-mask-origin: view-box;
 
     mask-repeat: no-repeat;
-    mask-position: bottom left;
+    mask-position: left bottom;
     mask-size: auto var(--separator-height-img);
     mask-origin: view-box;
 }
