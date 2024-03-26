@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Dr Matthias Komm">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Hamburg",
+            "postalCode": "22607",
+            "addressCountry": "DE"
+            },
+            "image": "imgs/me.jpg",
+            "jobTitle": "Physicist",
+            "name": "Dr Matthias Komm",
+            "url": "http://github.com/matt-komm",
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": " Deutsches Elektronen-Synchrotron (DESY)",
+                    "address": {
+                        "@type":"PostalAddress",
+                        "addressLocality": "Hamburg",
+                        "postalCode": "22607",
+                        "addressCountry": "DE"
+                    }
+                }
+            ],
+            "alumniOf": [
+                {
+                    "@type": "Organization",
+                    "name": "European Organization for Nuclear Research (CERN)",
+                    "address": {
+                        "@type":"PostalAddress",
+                        "addressLocality": "Meyrin",
+                        "postalCode": "1211",
+                        "addressCountry": "CH"
+                    }
+                },
+                {
+                    "@type": "CollegeOrUniversity",
+                    "name": "Imperial College London",
+                    "address": {
+                        "@type":"PostalAddress",
+                        "addressLocality": "Ottignies-Louvain-la-Neuve",
+                        "postalCode": "SW7 2BX",
+                        "addressCountry": "BE"
+                    }
+                },
+                {
+                    "@type": "CollegeOrUniversity",
+                    "name": "Universite catholique de Louvain",
+                    "address": {
+                        "@type":"PostalAddress",
+                        "addressLocality": "Aachen",
+                        "postalCode": "52062",
+                        "addressCountry": "DE"
+                    }
+                },
+                {
+                    "@type": "CollegeOrUniversity",
+                    "name": "RWTH Aachen University"
+                }
+            ]
+        }
+        </script>
+
+        <title>Dr Matthias Komm</title>
+
+        <link rel="stylesheet" type="text/css" href="fonts/ubuntu_fallback/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="dropdown.css">
+        <script src="scripts/title.js"></script>
+        <script src="scripts/header.js"></script>
+        <script src="scripts/lazyload.js"></script>
+
+
+        <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+        <link rel="manifest" href="icon/manifest.json">
+        <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+
+    </head>
+    <body>
+        <header class="header fade-bottom" id="header">
+            <div class="logo">Dr Matthias Komm</div>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span
+                    class="navicon"></span></label>
+            <ul class="menu" id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+        
+        <div class="scroll">
+            <div class="scroll-title-item" id="title-item">
+
+                <div class="center-content" style="display: flex; height: 100%; z-index: 20;">
+                    <div id="canvas-title-container" style="position: fixed; top: 10px; height: 470px; left: max(10%,20px); right: max(15%,20px); min-width: 700px;">
+                        <canvas id="canvas-title"></canvas>
+                    </div>
+
+                    <div style="width:100%; align-self: flex-end; margin-bottom: 70px;">
+
+                        <div class="title-img"></div>
+                        <div style="position: relative; display: inline-block; margin-top: 20px; border: white solid 0px;">
+                            <div
+                                style="position: relative; display: block; text-align: left; color: white; font-size: clamp(4rem, 3vw + 2rem, 5rem); font-weight: 200; line-height: 0.9;">
+                                Dr Matthias Komm
+                            </div>
+                            <div
+                                style="position: relative; display: block; margin-top: 20px; text-align: left; color: white; font-size: clamp(1.25rem, 1.0vw + 0.5rem, 1.5rem); font-weight: 300; line-height: 1.2;">
+                                Physicist, Big Data, Artifical Inteligence, HPC Computing, Simulation
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <section>
+                <div class="scroll-welcome-item">
+                    <div class="center-content">
+                        <span>
+                            <h1>Welcome ...</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero possimus suscipit, nulla excepturi aliquam laborum voluptatum eos omnis ipsa nostrum optio maxime.
+                                Deserunt quidem itaque exercitationem culpa ut rerum fuga et, explicabo minima. Quis exercitationem quibusdam beatae fuga? Perferendis dolores, aliquam asperiores nobis
+                                explicabo maiores itaque. Nihil esse repellat, dolore quidem ipsum perferendis id deserunt placeat quia possimus, repellendus, aut totam. Repudiandae optio maxime
+                                dolorem cumque ipsa vitae. Sint sed deserunt possimus tempora nobis. Esse quod molestias sequi sunt! Culpa mollitia numquam molestias, illum repudiandae, quisquam
+                                voluptatibus ex placeat corporis tempore facilis reiciendis vel, inventore voluptatem necessitatibus nisi facere neque! Itaque tenetur quas vel aspernatur maxime
+                                voluptatem porro enim velit. Ut nostrum porro culpa sit. Aliquam nihil non recusandae consequuntur consectetur nobis suscipit, officiis quibusdam accusamus veniam
+                                impedit officia neque eligendi distinctio quis autem inventore ut animi facilis. Odio ab repellat hic cumque esse dolorum ipsa perferendis. Optio et cumque excepturi
+                                explicabo amet magni soluta illo iste tempora veniam dicta numquam, ipsam reiciendis totam quaerat quasi quia consequatur! Voluptas facilis autem laborum inventore,
+                                saepe perspiciatis iste laudantium vitae veniam dolores perferendis non odio aliquid nostrum laboriosam hic deleniti maiores aliquam provident ab possimus animi! Harum
+                                corporis repellat odit ad animi.
+                            </p>
+                        </span>
+                    </div>
+                    <div class="center-content column3-content">
+                        <div>
+                            <h2>Physics</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                                Fascinating subject. High energy physics. LHC = Big data generator. requires clever algorithms.
+                            </p>
+                        </div>
+                        <div>
+                            <h2>Machine learning</h2>
+                            <p>
+                                Paradigmen shift.
+                            </p>
+                        </div>
+                        <div>
+                            <h2>Computing</h2>
+                            <p>
+                                Software development, simulation, efficient data analysis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="scroll-separator">
+                <div class="scroll-separator-cms load-lazy"></div>
+                <div class="center-content">
+                    <div class="scroll-separator-cms-img load-lazy"></div>
+                </div>
+            </div>
+            <div class="center-content separator-info-text">
+                <p><a href="https://arxiv.org/abs/2312.07484">Neural network</a> to search for exotic long-lived particles</p>
+                <p><a href="https://cms.cern/detector">CMS experiment</a> at the <a href="https://home.cern/science/accelerators/large-hadron-collider">CERN LHC</a></p>
+            </div>
+
+            <section>
+                <div class="center-content" id="cv">
+                    <h1>CV</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Etiam
+                        lacinia sapien sit amet ipsum faucibus volutpat.
+                        Praesent
+                        tristique purus nisi, sed elementum nunc euismod
+                        bibendum. Vivamus
+                        feugiat lorem elit, lobortis pellentesque turpis
+                        condimentum ut.
+                        Donec aliquet ante eu ex hendrerit suscipit. Cras
+                        eget nisi
+                        consequat, volutpat lacus condimentum, tincidunt
+                        felis. Sed sit
+                        amet turpis accumsan mi blandit suscipit a quis ex.
+                        Phasellus in
+                        eros ex. Morbi molestie ante eros, a cursus magna
+                        venenatis et.
+                        Class aptent taciti sociosqu ad litora torquent per
+                        conubia
+                        nostra, per inceptos himenaeos.
+                        Cras id odio sed erat porta gravida sit amet ac
+                        libero. Etiam
+                        auctor lacus turpis, at pulvinar dui dictum ut. Sed
+                        molestie erat
+                        condimentum purus venenatis, sed molestie arcu
+                        viverra. Praesent
+                        non tellus vel massa interdum molestie ut id urna.
+                        Maecenas
+                        faucibus urna tortor, at vulputate enim dignissim
+                        nec. Sed sed
+                        turpis posuere, auctor leo eu, pellentesque ligula.
+                        Mauris in
+                    </p>
+                </div>
+            </section>
+
+
+            <div class="scroll-separator">
+                <div class="scroll-separator-chep load-lazy"></div>
+                <div class="center-content">
+                    <div class="scroll-separator-chep-img load-lazy"></div>
+                </div>
+            </div>
+            <div class="center-content separator-info-text" style="flex-direction: row-reverse">
+                <p>Conference on Computing in High Energy and Nuclear Physics <a href="http://chep2019.org/">(CHEP'19)</a></p>
+            </div>
+
+            <section>
+                <div class="center-content" id="projects">
+                    <h1>Projects</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Etiam
+                        lacinia sapien sit amet ipsum faucibus volutpat.
+                        Praesent
+                        tristique purus nisi, sed elementum nunc euismod
+                        bibendum. Vivamus
+                        feugiat lorem elit, lobortis pellentesque turpis
+                        condimentum ut.
+                        Donec aliquet ante eu ex hendrerit suscipit. Cras
+                        eget nisi
+                        consequat, volutpat lacus condimentum, tincidunt
+                        felis. Sed sit
+                        amet turpis accumsan mi blandit suscipit a quis ex.
+                        Phasellus in
+                        eros ex. Morbi molestie ante eros, a cursus magna
+                        venenatis et.
+                        Class aptent taciti sociosqu ad litora torquent per
+                        conubia
+                        nostra, per inceptos himenaeos.
+                        Cras id odio sed erat porta gravida sit amet ac
+                        libero. Etiam
+                        auctor lacus turpis, at pulvinar dui dictum ut. Sed
+                        molestie erat
+                        condimentum purus venenatis, sed molestie arcu
+                        viverra. Praesent
+                        non tellus vel massa interdum molestie ut id urna.
+                        Maecenas
+                        faucibus urna tortor, at vulputate enim dignissim
+                        nec. Sed sed
+                        turpis posuere, auctor leo eu, pellentesque ligula.
+                        Mauris in
+                    </p>
+                    <h1>Interests</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Etiam
+                        lacinia sapien sit amet ipsum faucibus volutpat.
+                        Praesent
+                        tristique purus nisi, sed elementum nunc euismod
+                        bibendum. Vivamus
+                        feugiat lorem elit, lobortis pellentesque turpis
+                        condimentum ut.
+                        Donec aliquet ante eu ex hendrerit suscipit. Cras
+                        eget nisi
+                        consequat, volutpat lacus condimentum, tincidunt
+                        felis. Sed sit
+                        amet turpis accumsan mi blandit suscipit a quis ex.
+                        Phasellus in
+                        eros ex. Morbi molestie ante eros, a cursus magna
+                        venenatis et.
+                        Class aptent taciti sociosqu ad litora torquent per
+                        conubia
+                        no stra, per inceptos himenaeos.
+                        Cras id odio sed erat porta gravida sit amet ac
+                        libero. Etiam
+                        auctor lacus turpis, at pulvinar dui dictum ut. Sed
+                        molestie erat
+                        condimentum purus venenatis, sed molestie arcu
+                        viverra. Praesent
+                        non tellus vel massa interdum molestie ut id urna.
+                        Maecenas
+                        faucibus urna tortor, at vulputate enim dignissim
+                        nec. Sed sed
+                        turpis posuere, auctor leo eu, pellentesque ligula.
+                        Mauris in
+                    </p>
+                </div>
+            </section>
+            
+            <div class="scroll-separator">
+                <div class="scroll-separator-cpudie load-lazy"></div>
+                    <div class="center-content">
+                        <pre style="line-height: 125%; font-size: calc(0.5rem + 0.1vw); height: 1000px; transform: rotate(-2deg); background-color: #ffffffb7; padding: 10px; display: inline-block; margin-left: 50px; margin-top: -50px; padding-top: 70px; backdrop-filter: blur(3px);">
+<span style="color: #204a87; font-weight: bold">template</span><span style="color: #ce5c00; font-weight: bold">&lt;</span><span style="color: #204a87; font-weight: bold">class</span> <span style="color: #000000">T</span><span style="color: #ce5c00; font-weight: bold">&gt;</span> <span style="color: #204a87; font-weight: bold">void</span> <span style="color: #000000">ComputeTmpl</span><span style="color: #000000; font-weight: bold">(</span>
+    <span style="color: #000000">OpKernelContext</span><span style="color: #ce5c00; font-weight: bold">*</span> <span style="color: #000000">context</span><span style="color: #000000; font-weight: bold">,</span> 
+    <span style="color: #204a87; font-weight: bold">unsigned</span> <span style="color: #204a87; font-weight: bold">int</span> <span style="color: #000000">input_index</span><span style="color: #000000; font-weight: bold">,</span> 
+    <span style="color: #204a87; font-weight: bold">const</span> <span style="color: #000000">std</span><span style="color: #ce5c00; font-weight: bold">::</span><span style="color: #000000">vector</span><span style="color: #ce5c00; font-weight: bold">&lt;</span><span style="color: #204a87; font-weight: bold">unsigned</span> <span style="color: #204a87; font-weight: bold">int</span><span style="color: #ce5c00; font-weight: bold">&gt;&amp;</span> <span style="color: #000000">diced_rates</span><span style="color: #000000; font-weight: bold">,</span>
+    <span style="color: #204a87; font-weight: bold">unsigned</span> <span style="color: #204a87; font-weight: bold">int</span> <span style="color: #000000">sum_rates</span>
+<span style="color: #000000; font-weight: bold">)</span> <span style="color: #204a87; font-weight: bold">const</span>
+<span style="color: #000000; font-weight: bold">{</span>
+    <span style="color: #204a87; font-weight: bold">const</span> <span style="color: #000000">Tensor</span><span style="color: #ce5c00; font-weight: bold">&amp;</span> <span style="color: #000000">input_tensor</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #000000">context</span><span style="color: #ce5c00; font-weight: bold">-&gt;</span><span style="color: #000000">input</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">input_index</span><span style="color: #000000; font-weight: bold">);</span>
+    <span style="color: #204a87; font-weight: bold">auto</span> <span style="color: #000000">input_data</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #000000">input_tensor</span><span style="color: #000000; font-weight: bold">.</span><span style="color: #000000">flat</span><span style="color: #ce5c00; font-weight: bold">&lt;</span><span style="color: #000000">T</span><span style="color: #ce5c00; font-weight: bold">&gt;</span><span style="color: #000000; font-weight: bold">();</span>
+    <span style="color: #204a87; font-weight: bold">int</span> <span style="color: #000000">batch_size</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #000000">input_tensor</span><span style="color: #000000; font-weight: bold">.</span><span style="color: #000000">dim_size</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #0000cf; font-weight: bold">0</span><span style="color: #000000; font-weight: bold">);</span>
+    <span style="color: #204a87; font-weight: bold">int</span> <span style="color: #000000">batch_length</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #000000">input_tensor</span><span style="color: #000000; font-weight: bold">.</span><span style="color: #000000">NumElements</span><span style="color: #000000; font-weight: bold">()</span><span style="color: #ce5c00; font-weight: bold">/</span><span style="color: #000000">batch_size</span><span style="color: #000000; font-weight: bold">;</span>
+    
+    <span style="color: #000000">Tensor</span><span style="color: #ce5c00; font-weight: bold">*</span> <span style="color: #000000">output_tensor</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #000000">nullptr</span><span style="color: #000000; font-weight: bold">;</span>
+    <span style="color: #000000">TensorShape</span> <span style="color: #000000">output_shape</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #000000">input_tensor</span><span style="color: #000000; font-weight: bold">.</span><span style="color: #000000">shape</span><span style="color: #000000; font-weight: bold">();</span>
+    <span style="color: #000000">output_shape</span><span style="color: #000000; font-weight: bold">.</span><span style="color: #000000">set_dim</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #0000cf; font-weight: bold">0</span><span style="color: #000000; font-weight: bold">,</span><span style="color: #000000">sum_rates</span><span style="color: #000000; font-weight: bold">);</span>
+    <span style="color: #000000">OP_REQUIRES_OK</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">context</span><span style="color: #000000; font-weight: bold">,</span> <span style="color: #000000">context</span><span style="color: #ce5c00; font-weight: bold">-&gt;</span><span style="color: #000000">allocate_output</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">input_index</span><span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #0000cf; font-weight: bold">1</span><span style="color: #000000; font-weight: bold">,</span> <span style="color: #000000">output_shape</span><span style="color: #000000; font-weight: bold">,</span><span style="color: #ce5c00; font-weight: bold">&amp;</span><span style="color: #000000">output_tensor</span><span style="color: #000000; font-weight: bold">));</span>
+    <span style="color: #204a87; font-weight: bold">auto</span> <span style="color: #000000">output_data</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #000000">output_tensor</span><span style="color: #ce5c00; font-weight: bold">-&gt;</span><span style="color: #000000">flat</span><span style="color: #ce5c00; font-weight: bold">&lt;</span><span style="color: #000000">T</span><span style="color: #ce5c00; font-weight: bold">&gt;</span><span style="color: #000000; font-weight: bold">();</span>
+    
+    <span style="color: #204a87; font-weight: bold">unsigned</span> <span style="color: #204a87; font-weight: bold">int</span> <span style="color: #000000">output_batch_index</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #0000cf; font-weight: bold">0</span><span style="color: #000000; font-weight: bold">;</span>
+    <span style="color: #204a87; font-weight: bold">for</span> <span style="color: #000000; font-weight: bold">(</span><span style="color: #204a87; font-weight: bold">unsigned</span> <span style="color: #204a87; font-weight: bold">int</span> <span style="color: #000000">ibatch</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #0000cf; font-weight: bold">0</span><span style="color: #000000; font-weight: bold">;</span> <span style="color: #000000">ibatch</span><span style="color: #ce5c00; font-weight: bold">&lt;</span><span style="color: #000000">batch_size</span><span style="color: #000000; font-weight: bold">;</span> <span style="color: #ce5c00; font-weight: bold">++</span><span style="color: #000000">ibatch</span><span style="color: #000000; font-weight: bold">)</span>
+    <span style="color: #000000; font-weight: bold">{</span>
+        <span style="color: #204a87; font-weight: bold">for</span> <span style="color: #000000; font-weight: bold">(</span><span style="color: #204a87; font-weight: bold">unsigned</span> <span style="color: #204a87; font-weight: bold">int</span> <span style="color: #000000">icopy</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #0000cf; font-weight: bold">0</span><span style="color: #000000; font-weight: bold">;</span> <span style="color: #000000">icopy</span><span style="color: #ce5c00; font-weight: bold">&lt;</span><span style="color: #000000">diced_rates</span><span style="color: #000000; font-weight: bold">[</span><span style="color: #000000">ibatch</span><span style="color: #000000; font-weight: bold">];</span><span style="color: #ce5c00; font-weight: bold">++</span><span style="color: #000000">icopy</span><span style="color: #000000; font-weight: bold">)</span>
+        <span style="color: #000000; font-weight: bold">{</span>
+            <span style="color: #204a87; font-weight: bold">for</span> <span style="color: #000000; font-weight: bold">(</span><span style="color: #204a87; font-weight: bold">unsigned</span> <span style="color: #204a87; font-weight: bold">int</span> <span style="color: #000000">idata</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #0000cf; font-weight: bold">0</span><span style="color: #000000; font-weight: bold">;</span> <span style="color: #000000">idata</span><span style="color: #ce5c00; font-weight: bold">&lt;</span><span style="color: #000000">batch_length</span><span style="color: #000000; font-weight: bold">;</span> <span style="color: #ce5c00; font-weight: bold">++</span><span style="color: #000000">idata</span><span style="color: #000000; font-weight: bold">)</span>
+            <span style="color: #000000; font-weight: bold">{</span>
+                <span style="color: #000000">output_data</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">output_batch_index</span><span style="color: #ce5c00; font-weight: bold">*</span><span style="color: #000000">batch_length</span><span style="color: #ce5c00; font-weight: bold">+</span><span style="color: #000000">idata</span><span style="color: #000000; font-weight: bold">)</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #000000">input_data</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">ibatch</span><span style="color: #ce5c00; font-weight: bold">*</span><span style="color: #000000">batch_length</span><span style="color: #ce5c00; font-weight: bold">+</span><span style="color: #000000">idata</span><span style="color: #000000; font-weight: bold">);</span>
+            <span style="color: #000000; font-weight: bold">}</span>
+            <span style="color: #000000">output_batch_index</span><span style="color: #ce5c00; font-weight: bold">+=</span><span style="color: #0000cf; font-weight: bold">1</span><span style="color: #000000; font-weight: bold">;</span>
+        <span style="color: #000000; font-weight: bold">}</span>
+    <span style="color: #000000; font-weight: bold">}</span>
+<span style="color: #000000; font-weight: bold">}</span></pre>
+                </div>
+            </div>
+            <div class="center-content separator-info-text">
+                <p>Custom <a href="https://www.tensorflow.org/guide/create_op">TensorFlow</a> kernel for <a href="https://matt-komm.github.io/ROOT-TF-pipeline/">data preprocessing</a></p>
+                <p><a href="https://en.wikipedia.org/wiki/Die_shot">Die shot</a> Intel i9-13900K by <a href="https://www.flickr.com/photos/130561288@N04">Fritzchens Fritz</a></p>
+            </div>
+
+            <section>
+                <div class="center-content" id="publications">
+                    <h1>Publications</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Etiam
+                        lacinia sapien sit amet ipsum faucibus volutpat.
+                        Praesent
+                        tristique purus nisi, sed elementum nunc euismod
+                        bibendum. Vivamus
+                        feugiat lorem elit, lobortis pellentesque turpis
+                        condimentum ut.
+                        Donec aliquet ante eu ex hendrerit suscipit. Cras
+                        eget nisi
+                        consequat, volutpat lacus condimentum, tincidunt
+                        felis. Sed sit
+                        amet turpis accumsan mi blandit suscipit a quis ex.
+                        Phasellus in
+                        eros ex. Morbi molestie ante eros, a cursus magna
+                        venenatis et.
+                        Class aptent taciti sociosqu ad litora torquent per
+                        conubia
+                        nostra, per inceptos himenaeos.
+                        Cras id odio sed erat porta gravida sit amet ac
+                        libero. Etiam
+                        auctor lacus turpis, at pulvinar dui dictum ut. Sed
+                        molestie erat
+                        condimentum purus venenatis, sed molestie arcu
+                        viverra. Praesent
+                        non tellus vel massa interdum molestie ut id urna.
+                        Maecenas
+                        faucibus urna tortor, at vulputate enim dignissim
+                        nec. Sed sed
+                        turpis posuere, auctor leo eu, pellentesque ligula.
+                        Mauris in
+                    </p>
+
+                    <h1>Presentations</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Etiam
+                        lacinia sapien sit amet ipsum faucibus volutpat.
+                        Praesent
+                        tristique purus nisi, sed elementum nunc euismod
+                        bibendum. Vivamus
+                        feugiat lorem elit, lobortis pellentesque turpis
+                        condimentum ut.
+                        Donec aliquet ante eu ex hendrerit suscipit. Cras
+                        eget nisi
+                        consequat, volutpat lacus condimentum, tincidunt
+                        felis. Sed sit
+                        amet turpis accumsan mi blandit suscipit a quis ex.
+                        Phasellus in
+                        eros ex. Morbi molestie ante eros, a cursus magna
+                        venenatis et.
+                        Class aptent taciti sociosqu ad litora torquent per
+                        conubia
+                        nostra, per inceptos himenaeos.
+                        Cras id odio sed erat porta gravida sit amet ac
+                        libero. Etiam
+                        auctor lacus turpis, at pulvinar dui dictum ut. Sed
+                        molestie erat
+                        condimentum purus venenatis, sed molestie arcu
+                        viverra. Praesent
+                        non tellus vel massa interdum molestie ut id urna.
+                        Maecenas
+                        faucibus urna tortor, at vulputate enim dignissim
+                        nec. Sed sed
+                        turpis posuere, auctor leo eu, pellentesque ligula.
+                        Mauris in
+                    </p>
+                </div>
+            </section>
+
+            <div class="scroll-separator">
+                <div class="scroll-separator-wlcg load-lazy"></div>
+                <div class="center-content">
+                    <div class="scroll-separator-wlcg-img load-lazy"></div>
+                </div>
+            </div>
+            <div class="center-content separator-info-text">
+                <p><a href="https://wlcg.web.cern.ch/">Worldwide LHC Computing Grid</a> for distributed data analyses</p>
+            </div>
+
+            <section>
+                <div class="center-content" id="contact">
+                    <h1>Contact</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Etiam
+                        lacinia sapien sit amet ipsum faucibus volutpat.
+                        Praesent
+
+                    </p>
+                    <div class="scroll-contact-box">
+                        <form action="https://formbold.com/s/ob280" method="POST">
+                            <input type="email" placeholder="Your email address" required name="email" style="position:relative; left: 0; width: 100%;">
+                            <input type="text" placeholder="Subject" name="subject" required style="position:relative; left: 0; width: 100%;">
+                            <textarea name="message" placeholder="Type your message" required style="position:relative; resize: none; left: 0; width: 100%; height: 50%;" rows="10" cols="20"></textarea>
+                            <button class="link-box-black" type="submit" style="position:relative; left: 0; padding: 5px 10px 5px 10px;"><p>Send Message</p></button>
+                        </form>
+                        
+                    </div>
+                </div>
+                
+            </section>
+            
+            <div class="scroll-impressum-box">
+                <div class="center-content" >
+                    <h4>Impressum<br></h4>
+                    Dr. Matthias Komm, Deutsches Elektronen-Synchrotron (DESY), Notkestraße 85, 22607 Hamburg, Germany.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

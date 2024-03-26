@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'UbuntuFallback';
+    src: url('subset-Ubuntu-Thin.woff2') format('woff2'),
+        url('subset-Ubuntu-Thin.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UbuntuFallback';
+    src: url('subset-Ubuntu-Light.woff2') format('woff2'),
+        url('subset-Ubuntu-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UbuntuFallback';
+    src: url('subset-Ubuntu.woff2') format('woff2'),
+        url('subset-Ubuntu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UbuntuFallback';
+    src: url('subset-Ubuntu-Bold.woff2') format('woff2'),
+        url('subset-Ubuntu-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UbuntuFallback';
+    src: url('subset-Ubuntu-Medium.woff2') format('woff2'),
+        url('subset-Ubuntu-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+

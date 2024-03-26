@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Mona Sans';
+    src: local('Mona Sans SemiBold'), local('MonaSans-SemiBold'),
+        url('subset-MonaSans-SemiBold.woff2') format('woff2'),
+        url('subset-MonaSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mona Sans';
+    src: local('Mona Sans Black'), local('MonaSans-Black'),
+        url('subset-MonaSans-Black.woff2') format('woff2'),
+        url('subset-MonaSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mona Sans';
+    src: local('Mona Sans Expanded Light'), local('MonaSansExpanded-Light'),
+        url('subset-MonaSansExpanded-Light.woff2') format('woff2'),
+        url('subset-MonaSansExpanded-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mona Sans';
+    src: local('Mona Sans Bold'), local('MonaSans-Bold'),
+        url('subset-MonaSans-Bold.woff2') format('woff2'),
+        url('subset-MonaSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mona Sans';
+    src: local('Mona Sans Regular'), local('MonaSans-Regular'),
+        url('subset-MonaSans-Regular.woff2') format('woff2'),
+        url('subset-MonaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
