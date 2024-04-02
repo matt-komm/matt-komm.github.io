@@ -283,12 +283,12 @@ button {
     margin-inline: auto;
     height: var(--separator-height);
 
-    -webkit-mask-image: url("imgs/separator_mask_opt.svg"), linear-gradient(90deg,rgba(1,1,1,1) 49%,rgba(1,1,1,0.15) 51%);
+    -webkit-mask-image: url("imgs/separator_mask_opt2.svg"), linear-gradient(90deg,rgba(1,1,1,1) 49%,rgba(1,1,1,0.15) 51%);
     -webkit-mask-size: clamp(calc(var(--center-width) * 0.95), 90%, calc(var(--center-width) * 1.2)) 100%, cover;
     -webkit-mask-repeat: no-repeat,repeat;
     -webkit-mask-position: center,center;
 
-    mask-image: url("imgs/separator_mask_opt.svg"), linear-gradient(90deg,rgba(1,1,1,1) 49%,rgba(1,1,1,0.15) 51%);
+    mask-image: url("imgs/separator_mask_opt2.svg"), linear-gradient(90deg,rgba(1,1,1,1) 49%,rgba(1,1,1,0.15) 51%);
     mask-size: clamp(calc(var(--center-width) * 0.95), 90%, calc(var(--center-width) * 1.2)) 100%, cover;
     mask-repeat: no-repeat,repeat;
     mask-position: center,center;
