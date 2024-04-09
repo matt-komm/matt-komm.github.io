@@ -80,19 +80,27 @@ p {
 input { 
     font-size: 1.05rem;
     line-height: 1.0em;
-    margin: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 2px 2px 2px;
+    border: solid 1px var(--text-title-color);
 }
 
 textarea { 
     font-size: 1.05rem;
     line-height: 1.25em;
-    margin: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 2px 2px 2px 2px;
+    border: solid 1px var(--text-title-color);
 }
 
 button {
-    font-size: 1.05rem;
+    font-size: 100%;
     font-style: normal;
     line-height: 1.0em;
+    border: solid 1px #eeeeee;
+    padding: 7px 15px 7px 15px;
 }
 
 .textitem {
@@ -134,7 +142,7 @@ button {
     column-gap: 15px;
     row-gap: 10px;
     flex-wrap: wrap;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 30px;
 }
 
