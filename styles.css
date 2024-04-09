@@ -221,12 +221,11 @@ button {
     right: 40px;
     top: 40px;
     bottom: 40px;
-    left: 72%;
-    max-width: 200px;
+    width: 39%;
     background-color: #eeeeee;
     mask-position: center center;
     mask-repeat: no-repeat;
-    mask-size: contain;
+    mask-size: 200px auto;
 }
 
 @media (max-width: 740px) {
