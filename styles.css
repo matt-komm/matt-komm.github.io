@@ -99,8 +99,16 @@ button {
     font-size: 100%;
     font-style: normal;
     line-height: 1.0em;
-    border: solid 1px #eeeeee;
-    padding: 7px 15px 7px 15px;
+    border-radius: 5px;
+    background-color: var(--text-title-color);
+    border: none;
+    color: #eeeeee;
+    padding: 10px 18px 10px 18px;
+}
+
+button:hover {
+    background-color: #bbbbbb;
+    color: var(--text-color);
 }
 
 .textitem {
@@ -222,6 +230,7 @@ button {
     top: 40px;
     bottom: 40px;
     width: 39%;
+    min-width: 200px;
     background-color: #eeeeee;
     mask-position: center center;
     mask-repeat: no-repeat;
@@ -701,14 +710,41 @@ button {
 .scroll-impressum-box {
     position: relative;
     margin-top: 100px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin-left: auto; 
-    margin-right: auto; 
+    padding-bottom: 20px;
+    padding-top: 20px;
     width: 100%; 
     font-size: 0.85rem;
+    line-height: 1.1rem;
     background-size: 300px;
     background-image: url("imgs/noise_opt.png");
     background-color:  var(--text-title-color);
-    color:rgb(221, 221, 221);
+    color:#eeeeee;
+}
+
+.contact-box {
+    padding: 20px 37% 20px 10px;
+}
+
+.contact-img {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    bottom: 60px;
+    width: 34%;
+    min-width: 220px;
+    background-color: #eeeeee;
+    mask-position: center center;
+    mask-repeat: no-repeat;
+    mask-size: 220px auto;
+    mask-image: url("imgs/icon-email.svg");
+}
+
+@media (max-width: 850px) {
+    .contact-box {
+        padding-right: 10px;
+    }
+    .contact-img {
+        display: none;
+    }
 }
