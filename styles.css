@@ -358,6 +358,20 @@ button:hover {
     min-width: calc((var(--center-width) * 0.5 - 1 * 20px) * 0.75);
 }
 
+.column2-nowarp-content {
+    display: flex; 
+    flex-direction: row; 
+    align-content: space-evenly; 
+    justify-content: space-between; 
+    align-items: stretch;
+    flex-wrap: nowrap; 
+    column-gap: 20px;
+}
+
+.column2-nowarp-content > div {
+    flex: 1; 
+}
+
 .column3-content {
     display: flex; 
     flex-direction: row; 
