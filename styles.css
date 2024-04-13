@@ -10,6 +10,7 @@ html {
     scroll-padding-top: 40px;
     --text-title-color: #3d5672;
     --text-color: rgb(41, 41, 41); /*#243f53;*/
+    --action-color: #0c6862;
     --title-height: calc(500px + 5vw);
     --separator-height: clamp(250px, 250px + 15vw, 600px);
     --separator-height-img: calc(var(--separator-height) * 0.8 - 20px);
@@ -44,7 +45,8 @@ section {
 }
 
 a {
-  color: var(--text-title-color);
+    color: var(--text-title-color);
+    font-weight: 500;
 }
 
 h1 {
