@@ -46,7 +46,6 @@ section {
 
 a {
     color: var(--text-title-color);
-    font-weight: 500;
 }
 
 h1 {
@@ -115,7 +114,6 @@ button:hover {
 
 .textitem {
     position: relative;
-    
     margin-bottom: 20px;
     
     padding: 2px 15px 4px 15px;
@@ -124,8 +122,8 @@ button:hover {
     border-left-color: #dddddd;
     border-left-width: 1px;
     border-left-style: solid;
+    padding: 2px 15px 4px 15px;
     background-color: #ffffff6e;
-    
 }
 
 .achievement-list {
