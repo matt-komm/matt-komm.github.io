@@ -113,13 +113,17 @@ button:hover {
 
 .textitem {
     position: relative;
-    box-shadow: -6px 0px 10px -1px #eeeeee;
-    padding: 2px 15px 4px 15px;
+    
     margin-bottom: 20px;
+    
+    padding: 2px 15px 4px 15px;
+    box-shadow: -6px 0px 10px -1px #eeeeee;
+    
     border-left-color: #dddddd;
     border-left-width: 1px;
     border-left-style: solid;
     background-color: #ffffff6e;
+    
 }
 
 .achievement-list {
