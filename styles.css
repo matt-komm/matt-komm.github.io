@@ -143,17 +143,18 @@ button:hover {
 
 .title-link-items {
     margin: 2px 10px 2px 10px;
-    padding: 5px 15px 5px 15px;
+    padding: 2x 10px 2x 10px;
     border-radius: 5px;
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
     align-items: center;
     min-width: 120px;
-    background-image: linear-gradient(180deg,#d3a84b 50%,#a38745 100%);
+    
     color: white;
     text-decoration: none;
     
+    background-image: linear-gradient(180deg,#e6b448 50%,#a38745 100%);
     border-color: #eeeeee;
     border-style: solid;
     border-width: 1px;
@@ -162,6 +163,7 @@ button:hover {
 }
 
 .title-link-items:hover {
+    background-image: linear-gradient(180deg,#e0e0e0 50%,#a3a3a3 100%);
     color: black;
 }
 
@@ -179,6 +181,18 @@ button:hover {
     padding: 1px 5px 1px 5px; 
     margin: 0;
     border-radius: 5px 0 0 5px;
+    background-color: #eeeeee;
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: 300;
+}
+
+.highlight-item {
+    display: inline-block;
+    padding: 1px 5px 1px 5px; 
+    margin: 0;
+    border-radius: 5px;
     background-color: #eeeeee;
     border-color: #dddddd;
     border-style: solid;
@@ -444,6 +458,7 @@ button:hover {
     left: 0px;
     width: 100%;
     height: var(--title-height);
+    margin-bottom: 120px;
 
     background-position: top 0px left calc(75vw - 100px),center,left;
     background-repeat: no-repeat,repeat, no-repeat;
@@ -477,16 +492,6 @@ button:hover {
     background-repeat: no-repeat;
     border: solid white 1px;
 }
-/*
-.title-hero-link {
-    padding: 5px 10px 5px 10px;
-    border-radius: 7px;
-    font-size: 1.2rem;
-    background-image: linear-gradient(180deg,#bb933d 50%,#7a632f 100%);
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    border: solid 1px #ffffff;
-}*/
 
 .title-hero-link {
     padding: 8px 20px 8px 20px;
@@ -503,6 +508,7 @@ button:hover {
 }
 
 .title-hero-link:hover {
+    background-image: linear-gradient(180deg,#c4c4c4 50%,#7e7e7e 100%);
     color: #000000;
 }
 
