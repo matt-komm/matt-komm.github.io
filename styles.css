@@ -42,7 +42,7 @@ section {
     padding: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 80px;
 }
 
@@ -149,12 +149,20 @@ button:hover {
     flex-direction: column; 
     justify-content: center; 
     align-items: center;
-    /*
-    border-color: #dddddd;
+    min-width: 120px;
+    background-image: linear-gradient(180deg,#d3a84b 50%,#a38745 100%);
+    color: white;
+    text-decoration: none;
+    
+    border-color: #eeeeee;
     border-style: solid;
     border-width: 1px;
-    box-shadow: 0px 0px 10px -2px #d8d8d8;
-    */
+    box-shadow: 0px 0px 5px -2px #494949;
+    
+}
+
+.title-link-items:hover {
+    color: black;
 }
 
 .highlight-items {
@@ -362,12 +370,13 @@ button:hover {
     justify-content: space-between; 
     align-items: stretch;
     flex-wrap: wrap; 
-    column-gap: 20px;
+    column-gap: 40px;
+
 }
 
 .column2-content > div {
     flex: 1; 
-    min-width: calc((var(--center-width) * 0.5 - 1 * 20px) * 0.75);
+    min-width: calc((var(--center-width) * 0.5 - 1 * 40px) * 0.75);
 }
 
 .column2-nowarp-content {
@@ -377,7 +386,7 @@ button:hover {
     justify-content: space-between; 
     align-items: stretch;
     flex-wrap: nowrap; 
-    column-gap: 20px;
+    column-gap: 40px;
 }
 
 .column2-nowarp-content > div {
@@ -391,12 +400,12 @@ button:hover {
     justify-content: space-between; 
     align-items: stretch;
     flex-wrap: wrap; 
-    column-gap: 20px;
+    column-gap: 40px;
 }
 
 .column3-content > div {
     flex: 1; 
-    min-width: calc((var(--center-width) * 0.33 - 2 * 20px) * 0.8);
+    min-width: calc((var(--center-width) * 0.33 - 2 * 40px) * 0.8);
 }
 
 .separator-info-text {
@@ -460,9 +469,9 @@ button:hover {
 
 .title-img {
     position: relative; 
-    width: calc(var(--title-height) * 0.4); 
-    height: calc(var(--title-height) * 0.4); 
-    background-image: url("imgs/testbeam.jpg"); 
+    width: calc(var(--title-height) * 0.35); 
+    height: calc(var(--title-height) * 0.35); 
+    background-image: url("imgs/me_opt.jpg"); 
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
@@ -486,6 +495,11 @@ button:hover {
     background-image: linear-gradient(180deg,#bb933d 50%,#7a632f 100%);
     text-decoration: none;
     color: #ffffff;
+
+    border-color: #c2c2c2;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0px 0px 5px -2px #494949;
 }
 
 .title-hero-link:hover {
@@ -497,7 +511,7 @@ button:hover {
     padding: 8px 20px 8px 20px;
     border-radius: 7px;
     text-decoration: none;
-    color: black;
+    color: white;
     border: solid 1px #bb933d;
 }
 
