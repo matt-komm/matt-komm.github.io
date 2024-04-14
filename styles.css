@@ -123,8 +123,6 @@ button:hover {
 .textitem {
     position: relative;
     margin-bottom: 20px;
-    
-    padding: 2px 15px 4px 15px;
     box-shadow: -6px 0px 10px -1px #eeeeee;
     
     border-left-color: #dddddd;
@@ -133,6 +131,14 @@ button:hover {
     padding: 2px 15px 4px 15px;
     background-color: #ffffff6e;
 }
+@media (max-width: 550px) {
+    .textitem {
+        padding: 2px 0 4px 0;
+        box-shadow: none;
+        border: none;
+    }
+}
+
 
 .achievement-list {
     margin: 0;
