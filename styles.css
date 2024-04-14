@@ -10,8 +10,11 @@ html {
     scroll-padding-top: 40px;
     --text-title-color: #3d5672;
     --text-color: rgb(41, 41, 41); /*#243f53;*/
-    --action-color: #bb933d;
-    --action-color-dark: #7a632f;
+    --action-color:  #e0e0e0; /*#d3a747;*/
+    --action-color-dark: #a1a1a1;/* #a38745;*/
+
+    --action-bw: #e0e0e0;
+    --action-bw-dark: #a1a1a1;
 
     --title-height: calc(550px + 5vw);
     --separator-height: clamp(250px, 250px + 10vw, 450px);
@@ -157,20 +160,19 @@ button:hover {
     align-items: center;
     min-width: 120px;
     
-    color: white;
+    color: black;
     text-decoration: none;
-    
-    background-image: linear-gradient(180deg,#e6b448 50%,#a38745 100%);
-    border-color: #eeeeee;
+    font-weight: 500;
+    background-image: url(imgs/noise_opt.png), linear-gradient(180deg, var(--action-color) 40%, var(--action-color-dark) 100%);
+    background-size: 250px, contain;
+    border-color: var(--action-bw);
     border-style: solid;
     border-width: 1px;
     box-shadow: 0px 0px 5px -2px #494949;
-    
 }
 
 .title-link-items:hover {
-    background-image: linear-gradient(180deg,#e0e0e0 50%,#a3a3a3 100%);
-    color: black;
+    background-image: linear-gradient(180deg,white 40%,var(--action-bw-dark) 100%);
 }
 
 .highlight-items {
@@ -503,33 +505,19 @@ button:hover {
     padding: 8px 20px 8px 20px;
     border-radius: 7px;
     font-weight: 500;
-    background-image: linear-gradient(180deg,#bb933d 50%,#7a632f 100%);
+    background-image: url(imgs/noise_opt.png), linear-gradient(180deg,var(--action-color) 50%,var(--action-color-dark) 100%);
+    background-size: 250px, contain;
     text-decoration: none;
-    color: #ffffff;
+    color: black;
 
-    border-color: #c2c2c2;
+    border-color: var(--action-bw);
     border-style: solid;
     border-width: 1px;
     box-shadow: 0px 0px 5px -2px #494949;
 }
 
 .title-hero-link:hover {
-    background-image: linear-gradient(180deg,#c4c4c4 50%,#7e7e7e 100%);
-    color: #000000;
-}
-
-
-.title-hero-link-outline {
-    padding: 8px 20px 8px 20px;
-    border-radius: 7px;
-    text-decoration: none;
-    color: white;
-    border: solid 1px #bb933d;
-}
-
-.title-hero-link-outline:hover {
-    color: #000000;
-    background-color: #eeeeee;
+    background-image: linear-gradient(180deg,white 50%,var(--action-bw-dark) 100%);
 }
 
 .scroll-separator {
