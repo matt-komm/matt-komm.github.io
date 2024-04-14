@@ -73,7 +73,6 @@ h3 {
     line-height: 1.2rem;
     font-size: 1.50rem;
     font-weight: bold;
-    color: var(--text-color);
 }
 
 p {
@@ -361,10 +360,7 @@ button:hover {
     flex-direction: row; 
     align-content: space-evenly; 
     justify-content: space-between; 
-    align-items:                     <div style="width:100%; align-self: center;">
-
-    <div class="title-img"></div>
-    <div style="position: relative;stretch;
+    align-items: stretch;
     flex-wrap: wrap; 
     column-gap: 20px;
 }
