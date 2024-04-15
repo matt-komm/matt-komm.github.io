@@ -10,11 +10,11 @@ html {
     scroll-padding-top: 40px;
     --text-title-color: #3d5672;
     --text-color: rgb(41, 41, 41); /*#243f53;*/
-    --action-color:  #d3a747;
-    --action-color-dark: #a38745;
+    --action-color:  #ebb84b;
+    --action-color-dark: #c2a051;
 
-    --action-bw: #e0e0e0;
-    --action-bw-dark: #a1a1a1;
+    --action-bw: #e4e4e4;
+    --action-bw-dark: #b9b9b9;
 
     --title-height: calc(550px + 5vw);
     --separator-height: clamp(250px, 250px + 10vw, 450px);
@@ -146,14 +146,15 @@ button:hover {
 } 
 
 .title-link-items {
-    margin: 2px 10px 2px 10px;
-    padding: 2x 10px 2x 10px;
+    margin: 0;
+    padding: 3px 5px 3px 5px;
     border-radius: 10px;
     display: flex; 
-    flex-direction: column; 
+    flex-direction: row; 
+    column-gap: 5px;
     justify-content: center; 
     align-items: center;
-    min-width: 120px;
+    min-width: 150px;
     
     color: var(--text-color);
     text-decoration: none;
@@ -281,87 +282,6 @@ button:hover {
     .cv-img {
         display: none;
     }
-}
-
-
-.link-box-black {
-    border: none;
-    color: black;
-    background-color: #99999955;
-    text-decoration: none;
-    display: inline;
-    margin: 3px;
-    padding: 2px 5px 2px 5px;
-}
-
-.link-box-black:hover {
-    border: none;
-    color: black;
-    background-color: #99999999;
-    text-decoration: none;
-    display: inline;
-    margin: 3px;
-    padding: 2px 5px 2px 5px;
-}
-
-.link-box-black:visited {
-    border: none;
-    color: black;
-    background-color: #99999955;
-    text-decoration: none;
-    display: inline;
-    margin: 3px;
-    padding: 2px 5px 2px 5px;
-}
-
-.link-box-black:active {
-    border: none;
-    color: black;
-    background-color: #99999955;
-    text-decoration: none;
-    display: inline;
-    margin: 3px;
-    padding: 2px 5px 2px 5px;
-}
-
-.link-box-white {
-    border: none;
-    color: white;
-    background-color: #ffffff55;
-    text-decoration: none;
-    display: inline;
-    margin: 3px;
-    padding: 2px 5px 2px 5px;
-}
-
-.link-box-white:hover {
-    border: none;
-    color: white;
-    background-color: #ffffff88;
-    text-decoration: none;
-    display: inline;
-    margin: 3px;
-    padding: 2px 5px 2px 5px;
-}
-
-.link-box-white:visited {
-    border: none;
-    color: white;
-    background-color: #ffffff55;
-    text-decoration: none;
-    display: inline;
-    margin: 3px;
-    padding: 2px 5px 2px 5px;
-}
-
-.link-box-white:active {
-    border: none;
-    color: white;
-    background-color: #ffffff55;
-    text-decoration: none;
-    display: inline;
-    margin: 3px;
-    padding: 2px 5px 2px 5px;
 }
 
 
@@ -494,25 +414,6 @@ button:hover {
     background-position: center;
     background-repeat: no-repeat;
     border: solid white 1px;
-}
-
-.title-hero-link {
-    padding: 8px 20px 8px 20px;
-    border-radius: 7px;
-    font-weight: 500;
-    background-image: url(imgs/noise_opt.png), linear-gradient(180deg,var(--action-color) 50%,var(--action-color-dark) 100%);
-    background-size: 250px, contain;
-    text-decoration: none;
-    color: black;
-
-    border-color: var(--action-bw);
-    border-style: solid;
-    border-width: 1px;
-    box-shadow: 0px 0px 5px -1px #aaaaaa;
-}
-
-.title-hero-link:hover {
-    background-image: linear-gradient(180deg,white 50%,var(--action-bw-dark) 100%);
 }
 
 .scroll-separator {

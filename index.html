@@ -151,10 +151,16 @@
                             </div>
                         </div>
                     </div>
-                    <div style="margin-top: 20px;">
+                    <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content:left; align-items: center; column-gap: 20px; row-gap: 20px; margin-top: 20px;">
                         
-                        <a href="#welcome" class="title-hero-link" style="margin-right: 15px;">Like to know more?</a>
-                        <a href="#contact" class="title-hero-link">Get in touch</a>
+                        <a href="#welcome" class="title-link-items">
+                            <img src="imgs/icons-info.svg" width="32px" height="32px">
+                            <div>Like to know more?</div>
+                        </a>
+                        <a href="#contact" class="title-link-items">
+                            <img src="imgs/icon-email.svg" width="32px" height="32px">
+                            <div>Get in touch</div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -220,23 +226,23 @@
                         </div>
                         <div style="margin: 30px 0 30px 0; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; align-items: center; column-gap: 20px; row-gap: 20px;">
                             <a class="title-link-items" href="download/resume.pdf">
-                                <img src="imgs/icons-download.svg">
+                                <img src="imgs/icons-download.svg" width="32px" height="32px">
                                 <div>Resume</div>
                             </a>
                             <a class="title-link-items" href="https://arxiv.org/abs/2312.07484">
-                                <img src="imgs/icons-paper.svg">
+                                <img src="imgs/icons-paper.svg" width="32px" height="32px">
                                 <div>Latest paper</div>
                             </a>
                             <a class="title-link-items" href="http://cds.cern.ch/record/2284102">
-                                <img src="imgs/icons-book.svg">
+                                <img src="imgs/icons-book.svg" width="32px" height="32px">
                                 <div>PhD thesis</div>
                             </a>
                             <a class="title-link-items" href="https://github.com/matt-komm">
-                                <img src="imgs/icons-github.svg">
+                                <img src="imgs/icons-github.svg" width="32px" height="32px">
                                 <div>Github</div>
                             </a>   
                             <a class="title-link-items" href="https://inspirehep.net/authors/1204495">
-                                <img src="imgs/icons-inspire.svg">
+                                <img src="imgs/icons-inspire.svg" width="32px" height="32px">
                                 <div>Inspire</div>
                             </a>
                         </div>
@@ -632,13 +638,16 @@
                         <div class="contact-img"></div>
                         <div class="contact-box">
                             <form action="https://formbold.com/s/ob280" method="POST">
-                                Email
+                                Your email
                                 <input type="email" placeholder="Your email address" required name="email" style="position:relative; left: 0; width: 100%;">
                                 Subject
                                 <input type="text" placeholder="Subject" name="subject" required style="position:relative; left: 0; width: 100%;">
                                 Message
                                 <textarea name="message" placeholder="Type your message" required style="position:relative; resize: none; left: 0; width: 100%; height: 50%;" rows="10" cols="20"></textarea>
-                                <button type="submit" class="title-link-items" style="margin: 0;">Send Message</button>
+                                <button type="submit" class="title-link-items" style="margin: 0;">
+                                    <img src="imgs/icon-send.svg" width="32px" height="32px">
+                                    <div>Send Message</div>
+                                </button>
                             </form>
                         </div>
                     </div>
