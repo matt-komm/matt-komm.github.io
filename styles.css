@@ -135,8 +135,8 @@ button:hover {
         box-shadow: none;
         border: none;
 
-        border-color: #f0f0f0 transparent #dddddd transparent;
-        border-width: 1px 0 2px 0;
+        border-color: #eeeeee transparent #eeeeee transparent;
+        border-width: 1px 0 1px 0;
         border-style: solid;
     }
 }
