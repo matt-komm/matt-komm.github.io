@@ -134,6 +134,10 @@ button:hover {
         padding: 2px 0 4px 0;
         box-shadow: none;
         border: none;
+
+        border-color: #f0f0f0 transparent #dddddd transparent;
+        border-width: 1px 0 2px 0;
+        border-style: solid;
     }
 }
 
@@ -147,7 +151,7 @@ button:hover {
 
 .title-link-items {
     margin: 0;
-    padding: 3px 5px 3px 5px;
+    padding: 3px 7px 3px 7px;
     border-radius: 10px;
     display: flex; 
     flex-direction: row; 
@@ -160,7 +164,7 @@ button:hover {
     text-decoration: none;
     font-weight: 500;
     background-image: url(imgs/noise_opt.png), linear-gradient(180deg,var(--action-color) 50%,var(--action-color-dark) 100%);    background-size: 250px, contain;
-    background-size: 250px, contain;
+    background-size: 200px, contain;
     border-color: var(--action-bw);
     border-style: solid;
     border-width: 1px;
