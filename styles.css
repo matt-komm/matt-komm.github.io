@@ -154,6 +154,13 @@ button:hover {
     margin: 0 0 1.25rem;
 } 
 
+.publication-item {
+    display: inline-block;
+    font-size: 1.1rem;
+    line-height: 1.25;
+    font-weight: 300;
+}
+
 .title-link-items {
     margin: 0;
     padding: 3px 7px 3px 7px;
