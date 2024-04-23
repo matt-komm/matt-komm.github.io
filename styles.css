@@ -253,7 +253,7 @@ button:hover {
     padding-left: 35px;
 }
 
-.cv-circle-list[fill="no"] > h4::before {
+.cv-circle-list[fill="no"] h4::before {
     content: '';
     position: absolute; 
     left: 2px; 
@@ -265,7 +265,7 @@ button:hover {
     background-color: white;
 }
 
-.cv-circle-list[fill="yes"] > h4::before {
+.cv-circle-list[fill="yes"] h4::before {
     content: '';
     position: absolute; 
     left: 2px; 
