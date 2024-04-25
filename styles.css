@@ -155,9 +155,10 @@ button:hover {
 
 .achievement-list {
     margin: 0;
-    padding: 0;
+    padding-left: 22px;
     list-style: inside url('imgs/icons-ok.svg');
-    margin: 0 0 1.25rem;
+    margin: 0 0 1.25rem 0;
+    list-style-position: outside;
 } 
 
 .publication-item {
