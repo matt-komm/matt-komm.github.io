@@ -7,7 +7,7 @@
 html { 
     height: 100%; 
     scroll-behavior: smooth;
-    scroll-padding-top: 40px;
+    scroll-padding-top: 60px;
     --text-title-color: #3d5672;
     --text-color: rgb(41, 41, 41); /*#243f53;*/
     --action-color:  #ebb84b;
@@ -32,6 +32,7 @@ body {
     width: 100%;
     height: 100%;
 
+    scroll-behavior: smooth;
     overflow-y: auto;
 
     font-family:  "Ubuntu", system-ui, "UbuntuFallback", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -52,11 +53,16 @@ section {
 
 a {
     color: var(--text-title-color);
-    font-weight: bold;
+    font-weight: 500;
+    padding-inline: 1px;
+    text-decoration: none;
+    border-bottom: solid 2px var(--text-title-color);
 }
 
 a:hover {
     color: black;
+    border-bottom: solid 2px black;
+    background-color: #eeeeee;
 }
 
 b {
@@ -131,7 +137,6 @@ button:hover {
 
 .textitem {
     position: relative;
-    margin-bottom: 20px;
     box-shadow: -6px 0px 10px -1px #dddddd;
     
     border-left-color: #bbbbbb;
@@ -145,10 +150,6 @@ button:hover {
         padding: 2px 0 4px 0;
         box-shadow: none;
         border: none;
-
-        border-color: #eeeeee transparent #eeeeee transparent;
-        border-width: 1px 0 1px 0;
-        border-style: solid;
     }
 }
 
@@ -192,6 +193,9 @@ button:hover {
 
 .title-link-items:hover {
     background-image: url(imgs/noise_opt.png), linear-gradient(180deg,var(--action-bw) 50%,var(--action-bw-dark) 100%);
+    border-color: var(--action-bw);
+    border-style: solid;
+    border-width: 1px;
 }
 
 .highlight-items {
@@ -321,13 +325,13 @@ button:hover {
     justify-content: space-between; 
     align-items: stretch;
     flex-wrap: wrap; 
-    column-gap: 40px;
+    column-gap: 20px;
 
 }
 
 .column2-content > div {
     flex: 1; 
-    min-width: calc((var(--center-width) * 0.5 - 1 * 40px) * 0.75);
+    min-width: calc((var(--center-width) * 0.5 - 1 * 20px) * 0.75);
 }
 
 .column2-nowarp-content {
@@ -337,7 +341,7 @@ button:hover {
     justify-content: space-between; 
     align-items: stretch;
     flex-wrap: nowrap; 
-    column-gap: 40px;
+    column-gap: 20px;
 }
 
 .column2-nowarp-content > div {
@@ -351,12 +355,12 @@ button:hover {
     justify-content: space-between; 
     align-items: stretch;
     flex-wrap: wrap; 
-    column-gap: 40px;
+    column-gap: 20px;
 }
 
 .column3-content > div {
     flex: 1; 
-    min-width: calc((var(--center-width) * 0.33 - 2 * 40px) * 0.8);
+    min-width: calc((var(--center-width) * 0.33 - 2 * 20px) * 0.8);
 }
 
 .separator-info-text {
@@ -469,6 +473,46 @@ button:hover {
     mask-position: center center;
 }
 
+.scroll-highlights-imgs {
+    position: relative; 
+    width: 100%; 
+    height: 200px; 
+    background-size: auto 100%; 
+    background-color: #000000; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    margin-top: 0px;
+    border-radius: 10px;
+}
+
+.scroll-highlights-hep {
+    background-image: none; 
+}
+
+.scroll-highlights-hep.lazy {
+    opacity: 1;
+    background-image: url(imgs/minievent.jpg); 
+}
+
+
+.scroll-highlights-dataanalysis {
+    background-image: none; 
+}
+
+.scroll-highlights-dataanalysis.lazy {
+    opacity: 1;
+    background-image: url(imgs/dataanalysis.jpg); 
+}
+
+.scroll-highlights-computing {
+    background-image: none; 
+}
+
+.scroll-highlights-computing.lazy {
+    opacity: 1;
+    background-image: url(imgs/computing.jpg); 
+}
+
 .box-white {
     padding: 10px;
     margin: 0px;
@@ -493,13 +537,13 @@ button:hover {
     background-size: 300px,cover;
     background-attachment: fixed,fixed;
     
-    -webkit-mask-image: linear-gradient(90deg,rgba(1,1,1,0.1) 10%, rgba(1,1,1,0.2) 40%, rgba(1,1,1,1) 80%);
+    -webkit-mask-image: linear-gradient(90deg,rgba(1,1,1,0.1) 10%, rgba(1,1,1,0.2) 40%, rgba(1,1,1,1) 70%);
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: left;
     -webkit-mask-size: max(100%,1200px);
     -webkit-mask-origin: view-box;
     
-    mask-image: linear-gradient(90deg,rgba(1,1,1,0.1) 10%, rgba(1,1,1,0.2) 40%, rgba(1,1,1,1) 80%);
+    mask-image: linear-gradient(90deg,rgba(1,1,1,0.1) 10%, rgba(1,1,1,0.2) 40%, rgba(1,1,1,1) 70%);
     mask-repeat: no-repeat;
     mask-position: left;
     mask-size: max(100%,1200px);
@@ -557,13 +601,13 @@ button:hover {
     background-size: 300px,cover;
     background-attachment: fixed, fixed;
     
-    -webkit-mask-image: linear-gradient(270deg, rgba(1,1,1,1) 5%, rgba(1,1,1,0.1) max(500px, 70vw));
+    -webkit-mask-image: linear-gradient(270deg, rgba(1,1,1,1) 5%, rgba(1,1,1,0.7) 40%, rgba(1,1,1,0.1) max(500px, 70vw));
     -webkit-mask-repeat: repeat;
     -webkit-mask-position: left;
     -webkit-mask-size: 100% auto;
     -webkit-mask-origin: view-box;
 
-    mask-image: linear-gradient(270deg, rgba(1,1,1,1) 5%, rgba(1,1,1,0.1) max(500px, 70vw));
+    mask-image: linear-gradient(270deg, rgba(1,1,1,1) 5%, rgba(1,1,1,0.7) 40%, rgba(1,1,1,0.1) max(500px, 70vw));
     mask-repeat: repeat;
     mask-position: left;
     mask-size: 100% auto;
@@ -616,20 +660,20 @@ button:hover {
     width: 100%;
     height: 100%;
     
-    background-position: center,left top,right, left;
-    background-repeat: no-repeat,repeat,no-repeat, no-repeat;
-    background-size: cover, 300px,cover,auto 100vh;
-    background-attachment: fixed,fixed, scroll, fixed;
-    background-blend-mode: hard-light, normal, hard-light, normal;
+    background-position: right, left;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover,auto 100vh;
+    background-attachment:  scroll, fixed;
+    background-blend-mode: hard-light, normal;
 
 
-    -webkit-mask-image: linear-gradient(90deg, rgba(1,1,1,0.5) 5%,  rgba(1,1,1,0.9) max(500px, 70vw));
+    -webkit-mask-image: linear-gradient(90deg, rgba(1,1,1,0.5) 5%, rgba(1,1,1,0.6) 40%, rgba(1,1,1,1) max(500px, 70vw));
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: bottom right;
     -webkit-mask-size: auto 100%;
     -webkit-mask-origin: view-box;
 
-    mask-image: linear-gradient(90deg, rgba(1,1,1,0.5) 5%,  rgba(1,1,1,0.9) max(500px, 70vw));
+    mask-image: linear-gradient(90deg, rgba(1,1,1,0.5) 5%, rgba(1,1,1,0.6) 40%, rgba(1,1,1,1) max(500px, 70vw));
     mask-repeat: no-repeat;
     mask-position: bottom right;
     mask-size: auto 100%;
@@ -640,8 +684,7 @@ button:hover {
 .scroll-separator-cpudie.lazy {
     opacity: 1;
     background-image: 
-        linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.0) 80%, rgba(255, 255, 255, 0.9) 100%), 
-        url("imgs/noise_opt.png"),
+
         url("imgs/die_opt.jpg"),
         linear-gradient(20deg, rgb(54, 173, 153) 20%, rgb(250,119,255) 50%, rgb(250,229,46) 95%);
 }

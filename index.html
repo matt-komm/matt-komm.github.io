@@ -168,10 +168,11 @@
             <section>
                 <div class="scroll-welcome-item">
                     <div class="center-content">
-                        <h1>
-                            <span style="font-size: 5rem; margin-bottom: 40px;">Welcome</span>
-                        </h1>
-                        <div class="textitem" id="welcome" style="padding-top: 20px;">
+                        
+                        <div class="textitem" id="welcome">
+                            <h1>
+                                <span style="font-size: 5rem; margin-bottom: 40px;">Welcome</span>
+                            </h1>
                             <div class="column2-content" style="row-gap: 20px; align-items: stretch; flex-direction: row-reverse;">
                                 <div class="scroll-welcome-img"></div>
                                 <div style="margin-bottom: 0px;">
@@ -183,7 +184,7 @@
                                         focusing on the study of fundamental particles of matter and their interactions. 
                                         
                                         With over a decade of experience, I've worked extensively on the <a href="https://cms.cern/detector">CMS experiment</a> 
-                                        at the <a href="https://home.cern/science/accelerators/large-hadron-collider">Large Hadron Collider (LHC)</a>.
+                                        at the <a href="https://home.cern/science/accelerators/large-hadron-collider">Large Hadron Collider (LHC)</a> in Geneva, Switzerland.
                                     </p><p>
                                         I'm proficient in advanced computing tools, such as High-Performance Computing (HPC) &amp; Machine Learning (ML),
                                         enabling me to investigate the big data sets 
@@ -209,13 +210,13 @@
                                     <li>BA, MA &amp; PhD in physics (2007&ndash;2017)</li>
                                     <li>collaborating in big international teams (+1000 pers.)</li>
                                     <li>leading research teams (&agrave; 5&ndash;15 pers.)</li>
-                                    <li>primary author of 6 scientific publications<br> (+900 as CMS collaboration member)</li>
+                                    <li>published 6 scientific papers<br> (co-signed +900 as CMS collaboration member)</li>
                                 </ul>
                             </div>
                             <div>
                                 <ul class="achievement-list"  style="margin: 0;">
                                     <li>supervision of PhD &amp; undergraduate students</li>
-                                    <li>organization of workshops &amp; hackathons (&agrave; 20&ndash;60 pers.)</li>
+                                    <li>organization of international workshops,<br> hackathons &amp; schools (&agrave; 20&ndash;60 pers.)</li>
                                     <li>+10 yrs. experience in statistics &amp; data analysis</li>         
                                     <li>daily programming in C++ &amp; Python</li>                               
                                 </ul>
@@ -245,11 +246,12 @@
                         </div>
                     </div>
                 </div>
+                <p></p>
                 <div class="center-content">
                     <div class="column3-content">
                         <div class="textitem">
-                            <div style="position: relative; width: 100%; height: 200px; background-image: url(imgs/minievent.jpg); background-size: auto 100%; background-color: #000000; background-position: center center; background-repeat: no-repeat; margin-top: 10px;">
-                                <h2 style="color: white; padding-inline: 5px;">High energy physics</h2>
+                            <div class="scroll-highlights-imgs scroll-highlights-hep load-lazy">
+                                <h2 style="color: white; padding-inline: 5px;">LHC physics</h2>
                             </div>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. achievements
@@ -266,7 +268,7 @@
                             </ul>
                         </div>
                         <div class="textitem">
-                            <div style="position: relative; width: 100%; height: 200px; background-image: url(imgs/dataanalysis.jpg); background-size: auto 100%; background-color: #000000; background-position: center center; background-repeat: no-repeat; margin-top: 10px;">
+                            <div class="scroll-highlights-imgs scroll-highlights-dataanalysis load-lazy">
                                 <h2 style="color: white; padding-inline: 5px;">Data analysis &amp; AI</h2>
                             </div>
                             <p>
@@ -289,8 +291,8 @@
                                 <li>MCMC sampling</li>
                             </ul>
                         </div>
-                        <div  class="textitem">
-                            <div style="position: relative; width: 100%; height: 200px; background-image: url(imgs/dataanalysis.jpg); background-size: auto 100%; background-color: #000000; background-position: center center; background-repeat: no-repeat; margin-top: 10px;">
+                        <div class="textitem">
+                            <div class="scroll-highlights-imgs scroll-highlights-computing load-lazy">
                                 <h2 style="color: white; padding-inline: 5px;">Computing &amp; software</h2>
                             </div>
                             <p>
@@ -328,7 +330,10 @@
             <section>
                 <div class="center-content" id="cv">
                     <h1>CV</h1>
-                    <div class="textitem">
+                    <div style="text-align: right;" id="experience">
+                        <a style="color: black; border: solid 1px #eeeeee; background-color: #dddddd; font-weight: normal; padding: 2px 10px 2px 10px;" href="#skills"><img style="height: 0.8em;" src="imgs/arrow-down.svg"> Skills</a>
+                    </div>
+                    <div class="textitem" >
                         <!--<div class="cv-img" style="mask-image: url(imgs/icon-experience.svg);"></div>-->
                         <h2>Professional experience</h2>
                         <div class="cv-list" line="yes">
@@ -382,11 +387,17 @@
                             </div>
                         </div>
                     </div>
+                    <div style="text-align: right;">
+                        <a style="color: black; border: solid 1px #eeeeee; background-color: #dddddd; font-weight: normal; padding: 2px 10px 2px 10px;" href="#experience"><img style="height: 0.8em;" src="imgs/arrow-up.svg"> Professional experience</a>
+                    </div>
                 </div>
             </section>
 
             <section>
                 <div class="center-content">
+                    <div style="text-align: right;" id="skills">
+                        <a style="color: black; border: solid 1px #eeeeee; background-color: #dddddd; font-weight: normal; padding: 2px 10px 2px 10px;" href="#experience"><img style="height: 0.8em;" src="imgs/arrow-down.svg"> Groupleader / Convenerships</a>
+                    </div>
                     <div class="textitem">
                         <h2>Skills</h2>
                         
@@ -771,6 +782,9 @@
                                 </button>
                             </form>
                         </div>
+                    </div>
+                    <div style="text-align: right;">
+                        <a style="color: black; border: solid 1px #eeeeee; background-color: #dddddd; font-weight: normal; padding: 2px 10px 2px 10px;" href="#"><img style="height: 0.8em;" src="imgs/arrow-up.svg"> Top</a>
                     </div>
                 </div>
                 
