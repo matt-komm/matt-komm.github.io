@@ -320,7 +320,7 @@ button:hover {
 
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 120px auto;
+    background-size: auto 7em;
 }
 
 @media (max-width: 740px) {
@@ -485,8 +485,13 @@ button:hover {
     */
 }
 
-.separator-section-gap {
+.separator-section-gap-top {
     height: 50px;
+    width: 100%;
+}
+
+.separator-section-gap-bottom {
+    height: 70px;
     width: 100%;
 }
 
@@ -495,14 +500,14 @@ button:hover {
 }
 
 .scroll-welcome-img {
-    min-height: 300px; 
+    min-height: 18em; 
     background-image: url(imgs/testbeam.jpg);
     background-repeat: no-repeat; 
     background-position: center; 
-    background-size: 300px 300px;
+    background-size: auto 18em;
 
     mask-image: url(imgs/testbeam-mask.svg); 
-    mask-size: 300px 300px; 
+    mask-size: auto 18em; 
     mask-repeat: no-repeat; 
     mask-position: center center;
 }
