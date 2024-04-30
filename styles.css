@@ -486,12 +486,12 @@ button:hover {
 }
 
 .separator-section-gap-top {
-    height: 50px;
+    height: 4rem;
     width: 100%;
 }
 
 .separator-section-gap-bottom {
-    height: 70px;
+    height: 6rem;
     width: 100%;
 }
 
