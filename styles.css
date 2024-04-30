@@ -106,6 +106,7 @@ p {
 }
 
 input { 
+    font-family: inherit;
     font-size: 1.05rem;
     line-height: 1.0em;
     border-radius: 5px;
@@ -115,6 +116,7 @@ input {
 }
 
 textarea { 
+    font-family: inherit;
     font-size: 1.05rem;
     line-height: 1.25em;
     border-radius: 5px;
@@ -124,6 +126,7 @@ textarea {
 }
 
 button {
+    font-family: inherit;
     font-size: 100%;
     line-height: 1.0em;
     padding: 10px 18px 10px 18px;
@@ -197,6 +200,15 @@ button:hover {
     border-color: var(--action-bw);
     border-style: solid;
     border-width: 1px;
+}
+
+.mini-nav-header {
+    display: flex;
+    flex-direction: row; 
+    column-gap: 20px; 
+    align-items: flex-end; 
+    align-content: flex-end; 
+    justify-content: space-between;
 }
 
 .mini-nav-layout {
@@ -817,11 +829,10 @@ button:hover {
     bottom: 60px;
     width: 34%;
     min-width: 220px;
-    background-color: #eeeeee;
-    mask-position: center center;
-    mask-repeat: no-repeat;
-    mask-size: 220px auto;
-    mask-image: url("imgs/icon-email.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 12em;
+    background-image: url("imgs/icon-email.svg");
 }
 
 @media (max-width: 850px) {
