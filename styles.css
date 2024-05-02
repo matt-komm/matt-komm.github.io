@@ -91,7 +91,7 @@ h3 {
     margin-bottom: 0.3rem;
     font-size: 1.50rem;
     line-height: 1.2;
-    font-weight: normal;
+    font-weight: 300;
 }
 
 h4 {
@@ -168,9 +168,10 @@ button:hover {
 
 .publication-item {
     display: inline-block;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 300;
+    margin-bottom: 0.5rem;
 }
 
 .title-link-items {
@@ -348,6 +349,17 @@ button:hover {
     width: 16px; 
     height: 16px; 
     top: 1px; 
+    border-radius: 10px; 
+    background-color: var(--text-title-color);
+}
+
+.cv-circle-list[fillh3="yes"] h3::before {
+    content: '';
+    position: absolute; 
+    left: 2px; 
+    width: 16px; 
+    height: 16px; 
+    top: 6px; 
     border-radius: 10px; 
     background-color: var(--text-title-color);
 }
