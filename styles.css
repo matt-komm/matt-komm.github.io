@@ -22,6 +22,7 @@ html {
 }
 
 body { 
+    background-color: #fff;
     background-image: url("imgs/noise_opt.png");
     background-size: 250px;
     background-repeat:  repeat;
@@ -50,17 +51,17 @@ section {
 }
 
 a {
-    color: var(--text-title-color);
-    font-weight: 500;
+    color:  #b87f15;
+    font-weight: bold;
     padding-inline: 1px;
     text-decoration: none;
-    border-bottom: solid 2px var(--text-title-color);
+    /*border-bottom: solid 2px var(--text-title-color);*/
 }
 
 a:hover {
     color: black;
     border-bottom: solid 2px black;
-    background-color: #eeeeee;
+    /*background-color: #eeeeee;*/
 }
 
 b {
@@ -138,6 +139,7 @@ button:hover {
 
 .textitem {
     position: relative;
+    
     box-shadow: -6px 0px 10px -1px #dddddd;
     
     border-left-color: #bbbbbb;
@@ -145,6 +147,7 @@ button:hover {
     border-left-style: solid;
     padding: 2px 15px 4px 15px;
     background-color: #ffffff88;
+    
 }
 @media (max-width: 550px) {
     .textitem {
