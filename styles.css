@@ -480,9 +480,9 @@ button:hover {
     height: var(--title-height);
     margin-bottom: 120px;
 
-    background-position: top 0px left calc(75vw - 100px),center,left;
-    background-repeat: no-repeat,repeat, no-repeat;
-    background-size: calc(400px + 20vw) auto, 300px auto, max(100%, var(--center-width)) auto;
+    background-position: top 0px left calc(70vw - 100px), center, left;
+    background-repeat: no-repeat, repeat, no-repeat;
+    background-size: calc(600px + 10vw) auto, 300px auto, max(100%, var(--center-width)) auto;
     background-image: url("imgs/eq_opt.svg"), url("imgs/noise_opt.png"),linear-gradient(90deg, rgba(28,40,53,1) 0%, rgba(45,85,126,1) 30%, rgb(41, 151, 137) 70%, rgba(50,40,69,1) 100%);
     background-attachment: fixed,fixed,fixed;
     
@@ -522,17 +522,17 @@ button:hover {
     margin-inline: auto;
     height: var(--separator-height);
 
-    /*
-    -webkit-mask-image: url("imgs/separator_mask_opt.svg"), linear-gradient(90deg,rgba(1,1,1,1) 49%,rgba(1,1,1,0.15) 51%);
-    -webkit-mask-size: clamp(calc(var(--center-width) * 0.95), 90%, calc(var(--center-width) * 1.2)) 100%, cover;
-    -webkit-mask-repeat: no-repeat,repeat;
-    -webkit-mask-position: center,center;
+    
+    -webkit-mask-image: url("imgs/separator_mask_opt3.svg");
+    -webkit-mask-size: clamp(calc(var(--center-width) * 0.95), 90%, calc(var(--center-width) * 1.2)) 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
 
-    mask-image: url("imgs/separator_mask_opt.svg"), linear-gradient(90deg,rgba(1,1,1,1) 49%,rgba(1,1,1,0.15) 51%);
-    mask-size: clamp(calc(var(--center-width) * 0.95), 90%, calc(var(--center-width) * 1.2)) 100%, cover;
-    mask-repeat: no-repeat,repeat;
-    mask-position: center,center;
-    */
+    mask-image: url("imgs/separator_mask_opt3.svg");
+    mask-size: clamp(calc(var(--center-width) * 0.95), 90%, calc(var(--center-width) * 1.2)) 100%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    
 }
 
 .separator-section-gap-top {
