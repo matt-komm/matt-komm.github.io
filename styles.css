@@ -324,11 +324,6 @@ button:hover {
     padding-right: 40%;
 }
 
-.cv-circle-list > div, .cv-circle-list > p
-{
-    margin-bottom: 50px;
-}
-
 .cv-circle-list[fill="no"] h4::before {
     content: '';
     position: absolute; 
