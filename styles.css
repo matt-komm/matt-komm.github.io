@@ -101,7 +101,7 @@ h4 {
 }
 
 p {
-    margin: 0 0 1.25rem;
+    margin: 0 0 0.8rem;
 }
 
 input { 
@@ -147,6 +147,7 @@ button:hover {
     border-left-style: solid;
     padding: 10px 15px 10px 20px;
     background-color: #ffffff88;
+    border-radius: 10px;
     
 }
 @media (max-width: 550px) {
@@ -356,6 +357,11 @@ button:hover {
     top: 6px; 
     border-radius: 10px; 
     background-color: var(--text-title-color);
+}
+
+.cv-item {
+    position: relative;
+    margin-bottom: 4rem;
 }
 
 
