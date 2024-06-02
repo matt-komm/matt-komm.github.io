@@ -149,11 +149,10 @@ button:hover {
     background-color: #ffffff88;
 }
 
-
+/*
 .textitem::before {
     content: '';
     position: absolute;
-    /*background-color: var(--text-title-color);*/
     background-image: url(imgs/corner.svg);
     background-repeat: no-repeat;
     background-position: top left;
@@ -163,6 +162,8 @@ button:hover {
     left: 0px;
     height: 30px;
 }
+*/
+
 /*
 .textitem::after {
     content: '';
@@ -512,7 +513,7 @@ button:hover {
     left: 0px;
     width: 100%;
     height: var(--title-height);
-    margin-bottom: 120px;
+    margin-bottom: 50px;
 
     background-position: top 0px left calc(70vw - 100px), center, left;
     background-repeat: no-repeat, repeat, no-repeat;
