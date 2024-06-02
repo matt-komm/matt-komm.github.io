@@ -147,9 +147,20 @@ button:hover {
     border-left-style: solid;
     padding: 10px 15px 10px 20px;
     background-color: #ffffff88;
-    border-radius: 10px;
-    
 }
+
+/*
+.textitem::before {
+    content: '';
+    position: absolute;
+    background-color: var(--text-title-color);
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 10px;
+}*/
+
+
 @media (max-width: 550px) {
     .textitem {
         padding: 10px 0 10px 0;
@@ -621,7 +632,6 @@ button:hover {
 
 
 .scroll-separator-cms {
-    
     position: absolute;
     color: white;
     top: 0px;
@@ -835,6 +845,77 @@ button:hover {
     background-image: 
         url("imgs/noise_opt.png"), 
         url("imgs/pres_opt.jpg");
+}
+
+
+.pub-exo-23-013 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+}
+
+.pub-exo-23-013.lazy {
+    opacity: 1;
+    background-image: url(imgs/pub/EXO-21-013_opt.svg);
+}
+
+.pub-exo-19-011 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+}
+
+.pub-exo-19-011.lazy {
+    opacity: 1;
+    background-image: url(imgs/pub/EXO-19-011_opt.svg);
+}
+
+.pub-top-17-023 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+}
+
+.pub-top-17-023.lazy {
+    opacity: 1;
+    background-image: url(imgs/pub/TOP-17-023_opt.svg);
+}
+
+.pub-top-16-004 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+}
+
+.pub-top-16-004.lazy {
+    opacity: 1;
+    background-image: url(imgs/pub/TOP-16-004_opt.svg);
+}
+
+.pub-top-13-001 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+}
+
+.pub-top-13-001.lazy {
+    opacity: 1;
+    background-image: url(imgs/pub/TOP-13-001_opt.svg);
 }
 
 .scroll-contact-box {
