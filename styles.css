@@ -149,17 +149,31 @@ button:hover {
     background-color: #ffffff88;
 }
 
-/*
+
 .textitem::before {
     content: '';
     position: absolute;
-    background-color: var(--text-title-color);
-    width: 100%;
+    /*background-color: var(--text-title-color);*/
+    background-image: url(imgs/corner.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+
+    width: 30px;
     top: 0px;
     left: 0px;
+    height: 30px;
+}
+/*
+.textitem::after {
+    content: '';
+    position: absolute;
+    background-color: var(--text-title-color);
+    width: 100px;
+    bottom: 0px;
+    right: 0px;
     height: 10px;
-}*/
-
+}
+*/
 
 @media (max-width: 550px) {
     .textitem {
