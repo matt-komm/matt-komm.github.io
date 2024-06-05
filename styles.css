@@ -259,6 +259,12 @@ button:hover {
     box-shadow: 0px 0px 5px -1px #5f5f5f;
 }
 
+.animation-tag {
+    position: relative;
+    width: 0px;
+    height: 0px;
+}
+
 .mini-nav-header {
     display: flex;
     flex-direction: row; 

@@ -92,6 +92,7 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="stylesheet" type="text/css" href="dropdown.css">
         <script src="scripts/title.js"></script>
+        <script src="scripts/particles.js"></script>
         <script src="scripts/header.js"></script>
         <script src="scripts/lazyload.js"></script>
 
@@ -131,6 +132,9 @@
         </header>
         
         <div class="scroll">
+            <div id="canvas-bkg-container" style="position: fixed; top: 0px; bottom: 0px; left: 0px; right: 0px; z-index: 0;">
+                <canvas id="canvas-bkg"></canvas>
+            </div>
             <div class="scroll-title-item" id="title-item">
 
                 <div class="center-content" style="display: flex; flex-direction: column; justify-content: center; height: 100%; z-index: 20;">
@@ -167,17 +171,19 @@
             
             <section>
                 <div class="scroll-welcome-item">
+                    
                     <div class="center-content">
                         <h1>
                             <span style="font-size: 5rem; margin-bottom: 40px;">Welcome</span>
                         </h1>
                         <div class="textitem" id="welcome">
                             <div class="column2-content" style="row-gap: 20px; align-items: stretch; flex-direction: row-reverse;">
-                                <div class="scroll-welcome-img" style="margin-top: 30px;"></div>
+                                <div class="scroll-welcome-img" style="margin-top: 30px;"><div class="animation-tag"></div></div>
                                 <div>
                                     <div style="margin-left: 50px; margin-bottom: 20px;">
                                         <h2 style="margin-top: 20px;">... to my personal website!</h2>
                                     </div>
+                                    <div class="animation-tag"></div>
                                     <p>
                                         I'm a postdoctoral researcher specializing in experimental <a href="https://en.wikipedia.org/wiki/Particle_physics">High-Energy Physics (HEP)</a>, 
                                         focusing on the study of fundamental particles of matter and their interactions. 
@@ -191,6 +197,7 @@
                                         I enjoy tackling complex problems and solving technical challenges 
                                         while continuously expanding my skill set.   
                                     </p>
+                                    
                                 </div>
 
                             </div>
