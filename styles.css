@@ -145,24 +145,37 @@ button:hover {
     border-left-color: #bbbbbb;
     border-left-width: 1px;
     border-left-style: solid;
+    /*
+    border-top-color: var(--text-title-color);
+    border-top-width: 4px;
+    border-top-style: solid;
+    */
     padding: 10px 15px 10px 20px;
-    background-color: #ffffff88;
+    /*background-color: #ffffff88;*/
+
+    background-color: #fff;
+    background-image: linear-gradient(90deg, #fff 0%, #ffffff00  100%), linear-gradient(270deg, #fff 0%, #ffffff00  100%), url(imgs/noise_opt.png), url("imgs/textitem.svg");
+    background-position: top left, top right, center, center;
+    background-size: 100px auto, 100px auto, 200px, 500px;
+    background-repeat:  no-repeat, no-repeat, repeat, repeat;
+    background-attachment: scroll;
 }
 
 /*
 .textitem::before {
     content: '';
     position: absolute;
-    background-image: url(imgs/corner.svg);
+    background-image: url(imgs/corner_top.svg), url(imgs/corner_bottom.svg);
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: top left, bottom left;
+    background-size: contain;
 
-    width: 30px;
+    width: 20px;
     top: 0px;
     left: 0px;
-    height: 30px;
-}
-*/
+    height: 100%;
+}*/
+
 
 /*
 .textitem::after {

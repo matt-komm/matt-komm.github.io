@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="500" height="500" version="1.1" viewBox="0 0 132.3 132.3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="linearGradient6" x1="66.15" x2="66.15" y1="52.92" y2="39.69" gradientTransform="matrix(1.398 0 0 3 -18.49 -105.8)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fcfcfc" offset=".09106"/>
+   <stop stop-color="#f8f8f8" offset=".4528"/>
+   <stop stop-color="#fff" stop-opacity="0" offset=".7853"/>
+   <stop stop-color="#fbfbfb" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient10" x1="66.15" x2="66.15" y1="52.92" y2="39.69" gradientTransform="matrix(1.398 0 0 3 -18.49 -172)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fcfcfc" offset=".09106"/>
+   <stop stop-color="#f8f8f8" offset=".4528"/>
+   <stop stop-color="#fff" stop-opacity="0" offset=".7853"/>
+   <stop stop-color="#fbfbfb" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient11" x1="66.15" x2="66.15" y1="52.92" y2="39.69" gradientTransform="matrix(1.398 0 0 3 -18.49 -39.69)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fcfcfc" offset=".09106"/>
+   <stop stop-color="#f8f8f8" offset=".4528"/>
+   <stop stop-color="#fff" stop-opacity="0" offset=".7853"/>
+   <stop stop-color="#fbfbfb" offset="1"/>
+  </linearGradient>
+ </defs>
+ <rect transform="matrix(.8944 .4472 0 1 0 0)" y="13.23" width="147.9" height="39.69" fill="url(#linearGradient6)"/>
+ <rect transform="matrix(.8944 .4472 0 1 0 0)" x="5.347e-6" y="-52.92" width="147.9" height="39.69" fill="url(#linearGradient10)"/>
+ <rect transform="matrix(.8944 .4472 0 1 0 0)" y="79.37" width="147.9" height="39.69" fill="url(#linearGradient11)"/>
+</svg>

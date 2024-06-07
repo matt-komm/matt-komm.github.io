@@ -89,9 +89,22 @@ class Band
         this.ctx.stroke();
         this.ctx.closePath();
         this.ctx.fill();
-        
-        
-        
+
+        /*
+        this.ctx.strokeStyle = g;
+        for (let ix = 0; ix <= width; ix+=10) 
+        {
+            this.ctx.beginPath();
+            this.ctx.moveTo(ix, height/2.);
+            var modulation = Math.sin(this.freq*2*Math.PI*ix/scale+this.phase_speed*this.phase);
+            var damp = Math.exp(-this.lambda/width*(ix-width/2.)*(ix-width/2.));
+            
+            var iy = height/2.+currentAmplitude*damp*modulation;
+            
+            this.ctx.lineTo(ix, iy);
+            this.ctx.stroke();
+        }
+        */
     }
 }
 
