@@ -570,14 +570,14 @@ button:hover {
     -webkit-mask-image: url("imgs/waves_opt.svg"), linear-gradient(#fff 0 0);
     -webkit-mask-repeat: no-repeat, no-repeat;
     -webkit-mask-position: bottom -1px right -1px, center;
-    -webkit-mask-size: calc(600px + 40vw) auto, auto calc(2px + var(--title-height));
+    -webkit-mask-size: calc(600px + 60vw) auto, auto calc(2px + var(--title-height));
     -webkit-mask-composite: exclude, add;
     -webkit-mask-origin: view-box, view-box;
 
     mask-image: url("imgs/waves_opt.svg"), linear-gradient(#fff 0 0);
     mask-repeat: no-repeat, no-repeat;
     mask-position: bottom -1px right -1px, center;
-    mask-size: calc(600px + 40vw) auto, auto calc(2px + var(--title-height));
+    mask-size: calc(600px + 60vw) auto, auto calc(2px + var(--title-height));
     mask-composite: exclude, add;
     mask-origin: view-box, view-box;
 }
