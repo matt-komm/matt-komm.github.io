@@ -24,9 +24,10 @@ html {
 body { 
     background-color: #fff;
     background-image: url("imgs/noise2_opt.png");
-    background-size: 250px;
+    background-size: 300px;
     background-repeat:  repeat;
     background-attachment: scroll;
+    background-position: center;
     
     width: 100%;
     height: 100%;
@@ -156,30 +157,30 @@ button:hover {
 
     background-color: #fff;
     background-image: 
-        linear-gradient(0deg,#ffffff00  20%,  #ffffff88 55%, #ffffffaa 65%, #ffffff00  80%), 
+        linear-gradient(0deg,#ffffff00  10%,  #ffffffdd 55%, #ffffffaa 65%, #ffffff00  90%), 
         linear-gradient(90deg, #fff 0%, #ffffff00  100%), 
         linear-gradient(270deg, #fff 0%, #ffffff00  100%), 
-        url("imgs/textitem.svg"), 
-        url(imgs/noise2_opt.png);
+        url("imgs/textitem.svg");
+        
     
     background-position: 
         top left, 
         top left, 
         top right, 
-        center, 
         center;
+        
     background-size: 
         auto 400px, 
         100px auto, 
         100px auto, 
-        800px, 
-        300px;
+        1000px;
+
     background-repeat: 
         repeat, 
         no-repeat, 
         no-repeat, 
-        repeat, 
         repeat;
+
     background-attachment: scroll;
 }
 
@@ -673,7 +674,7 @@ button:hover {
 
 .scroll-highlights-dataanalysis.lazy {
     opacity: 1;
-    background-image: url(imgs/dataanalysis.jpg); 
+    background-image: url(imgs/dataanalysis3.jpg); 
 }
 
 .scroll-highlights-computing {
@@ -683,6 +684,15 @@ button:hover {
 .scroll-highlights-computing.lazy {
     opacity: 1;
     background-image: url(imgs/computing.jpg); 
+}
+
+.scroll-highlights-hardware {
+    background-image: none; 
+}
+
+.scroll-highlights-hardware.lazy {
+    opacity: 1;
+    background-image: url(imgs/hardware2.jpg); 
 }
 
 .box-white {
