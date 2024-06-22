@@ -132,11 +132,7 @@
         </header>
         
         <div class="scroll">
-            <div id="canvas-bkg-container" style="position: fixed; top: 0px; bottom: 0px; left: 0px; right: 0px; z-index: 0;">
-                <canvas id="canvas-bkg"></canvas>
-            </div>
             <div class="scroll-title-item" id="title-item">
-
                 <div class="center-content" style="display: flex; flex-direction: column; justify-content: center; height: 100%; z-index: 20;">
                     <div id="canvas-title-container" style="position: absolute; top: 10px; height: 470px; left: max(10%,20px); right: max(15%,20px); min-width: 700px;">
                         <canvas id="canvas-title"></canvas>
@@ -212,6 +208,7 @@
                             <div>
                                 <ul class="achievement-list" style="margin: 0;">
                                     <li>BA, MA &amp; PhD in physics (2007&ndash;2017)</li>
+                                    <li>collaborating internationally with +1000 scientists</li>
                                     <li>+10 yrs. experience in statistics &amp; data analysis</li>
                                     <li>daily programming in C++ &amp; Python</li>   
                                     <li>experienced in AI/ML &amp; distributed computing</li>
@@ -239,25 +236,29 @@
                     <div class="column2-content">
                         <div class="textitem">
                             <div class="scroll-highlights-imgs scroll-highlights-hep load-lazy">
-                                <h2 style="color: white; padding-inline: 5px;">LHC physics</h2>
+                                <h2 style="color: white; padding-inline: 10px;">LHC physics</h2>
                             </div>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. achievements
-
-                                Fascinating subject. High energy physics. LHC = Big data generator. requires clever algorithms.
+                                The LHC experiments aim to measure the properties of fundamental particles 
+                                that existed only in the early universe and to search for new hypothetical particles, 
+                                thereby expanding our understanding of particle physics. 
+                                For instance, while <a href="https://en.wikipedia.org/wiki/Top_quark">top quarks</a> were discovered in 1995, 
+                                their intricate properties can only be studied in great detail at the LHC.
+                            </p>
+                            <p>
+                                My research has been focused on the following topics:
                             </p>
                             <ul class="achievement-list">
-                                <li>Differential cross sections</li>
-                                <li>Single top quarks</li>
-                                <li>Top quark polarization</li>
-                                <li>Exotic long-lived particles</li>
-                                <li>Heavy neutral leptons</li>
-                                <li>Event generators &amp; Geant4</li>
+                                <li>Electroweak production of single <a href="https://en.wikipedia.org/wiki/Top_quark">top quarks</a></li>
+                                <li><a href="https://en.wikipedia.org/wiki/Top_quark">Top quark</a> polarization in \(t\) channel production</li>
+                                <li>Differential measurement of <a href="https://en.wikipedia.org/wiki/Top_quark">top quark</a> cross sections</li>
+                                <li>Search for exotic <a href="https://arxiv.org/abs/1903.04497">long-lived particles</a></li>
+                                <li>Search for long-lived <a href="https://arxiv.org/abs/2203.08039">heavy neutral leptons</a></li>
                             </ul>
                         </div>
                         <div class="textitem">
                             <div class="scroll-highlights-imgs scroll-highlights-dataanalysis load-lazy">
-                                <h2 style="color: white; padding-inline: 5px;">Data analysis &amp; AI</h2>
+                                <h2 style="color: white; padding-inline: 10px;">Data analysis &amp; AI</h2>
                             </div>
                             <p>
                                 Paradigmen shift. statistiscs. achievements
@@ -281,9 +282,13 @@
                         </div>
                         <div class="textitem">
                             <div class="scroll-highlights-imgs scroll-highlights-computing load-lazy">
-                                <h2 style="color: white; padding-inline: 5px;">Computing &amp; software</h2>
+                                <h2 style="color: white; padding-inline: 10px;">Computing &amp; software</h2>
                             </div>
                             <p>
+                                As the 
+                                LHC can also be seen as a "Big-Data generator", clever algorithms are 
+                                needed to answer fundamental questions of particle physics.
+
                                 I am using C++  Python on a dalily basis and 
                                 are accustom to working with and contributing to big code bases.
                                 In general, I am able to learn and adapt to new programming 
@@ -300,7 +305,7 @@
                         </div>
                         <div class="textitem">
                             <div class="scroll-highlights-imgs scroll-highlights-hardware load-lazy">
-                                <h2 style="color: white; padding-inline: 5px;">Hardware</h2>
+                                <h2 style="color: white; padding-inline: 10px;">Hardware</h2>
                             </div>
                             <p>
                                 I am using C++  Python on a dalily basis and 
@@ -328,6 +333,9 @@
                 <div class="scroll-separator-cms load-lazy"></div>
                 <div class="center-content">
                     <div class="scroll-separator-cms-img load-lazy"></div>
+                    <div id="canvas-cms-container" style="position: absolute; right: 0px; top: 0px; bottom: 0px; width: 50%;">
+                        <canvas id="canvas-cms"></canvas>
+                    </div>
                 </div>
             </div>
             <div class="center-content separator-info-text">

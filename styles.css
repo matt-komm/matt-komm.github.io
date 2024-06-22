@@ -655,6 +655,7 @@ button:hover {
     background-position: center center; 
     background-repeat: no-repeat; 
     margin-top: 0px;
+    margin-bottom: 20px;
     border-radius: 10px;
 }
 
@@ -683,7 +684,7 @@ button:hover {
 
 .scroll-highlights-computing.lazy {
     opacity: 1;
-    background-image: url(imgs/computing.jpg); 
+    background-image: url(imgs/computing2.jpg); 
 }
 
 .scroll-highlights-hardware {
@@ -692,7 +693,7 @@ button:hover {
 
 .scroll-highlights-hardware.lazy {
     opacity: 1;
-    background-image: url(imgs/hardware2.jpg); 
+    background-image: url(imgs/hardware3.jpg); 
 }
 
 .box-white {
