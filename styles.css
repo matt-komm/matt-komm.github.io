@@ -648,6 +648,7 @@ button:hover {
     mask-size: auto 18em; 
     mask-repeat: no-repeat; 
     mask-position: center center;
+
 }
 
 .scroll-highlights-imgs {
@@ -662,7 +663,7 @@ button:hover {
     margin-bottom: 20px;
     border-radius: 10px;
     
-    box-shadow: 0px 0px 5px 0px #999999;
+    box-shadow: 0px 1px 5px 1px #999999;
 
     /*border: solid 1px white;*/
 }
