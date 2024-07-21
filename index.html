@@ -133,7 +133,7 @@
         <div class="scroll">
             <div class="scroll-title-item" id="title-item">
                 <div class="center-content" style="display: flex; flex-direction: column; justify-content: center; height: 100%; z-index: 20;">
-                    <div id="canvas-title-container" style="position: absolute; top: 10px; height: 470px; left: max(10%,20px); right: max(15%,20px); min-width: 700px;">
+                    <div id="canvas-title-container" style="position: absolute; top: 0px; height: 500px; left: max(15%,20px); right: max(5%,20px); min-width: 600px;">
                         <canvas id="canvas-title"></canvas>
                     </div>
 
@@ -239,7 +239,7 @@
                     <div class="column2-content">
                         <div class="textitem">
                             <div class="scroll-highlights-imgs scroll-highlights-hep load-lazy">
-                                <h2 style="color: white; padding-inline: 10px;">Particle physics</h2>
+                                <h2 style="color: white; padding-inline: 20px; padding-top: 5px;">Particle physics</h2>
                             </div>
                             <p>
                                 The LHC experiments aim to measure the properties of fundamental particles, 
@@ -262,12 +262,14 @@
                         </div>
                         <div class="textitem">
                             <div class="scroll-highlights-imgs scroll-highlights-dataanalysis load-lazy">
-                                <h2 style="color: white; padding-inline: 10px;">Data analysis &amp; AI</h2>
+                                <h2 style="color: white; padding-inline: 20px; padding-top: 5px;">Data analysis &amp; AI</h2>
                             </div>
                             <p>
-                                The LHC experiments are <a href="https://en.wikipedia.org/wiki/Big_data">Big Data</a> generators! 
-                                Analyzing the massive data sets requires clever algorithms and statistical methods to 
-                                answer questions of particle physics. I had also been selected to convene the <a href="#groupleader">CMS Machine Learning Innovation Group</a> (2020&ndash;2022).
+                                The LHC experiments are <a href="https://en.wikipedia.org/wiki/Big_data">Big Data</a> generators,
+                                requiring sophisticated algorithms and statistical methods for quantitative analysis in particle physics. 
+                                This process extensively employs machine learning techniques as well. 
+                                Drawing on my experience, I led the 
+                                <a href="#groupleader">CMS Machine Learning Innovation Group</a> (2020&ndash;2022).
                             </p>
                             <p>
                                 Throughout my career I acquired extensive knowledge in various areas:
@@ -278,14 +280,13 @@
                                 <li>Numpy, Pandas, Scipy, scikit-learn, TensorFlow, Keras, PyTorch</li>
                                 <li>\(\chi^{2}\)/likelihood-based parameter estimation</li>
                                 <li>Frequentist/Bayesian inference &amp; hypothesis testing</li>
-                                <li>MCMC sampling</li>
                                 <li>Detector simulation</li>
                             </ul>
                            
                         </div>
                         <div class="textitem">
                             <div class="scroll-highlights-imgs scroll-highlights-computing load-lazy">
-                                <h2 style="color: white; padding-inline: 10px;">Computing &amp; software</h2>
+                                <h2 style="color: white; padding-inline: 20px; padding-top: 5px;">Computing &amp; software</h2>
                             </div>
                             <p>
                                 I use C++ &amp; Python daily and am experienced in 
@@ -306,7 +307,7 @@
                         </div>
                         <div class="textitem">
                             <div class="scroll-highlights-imgs scroll-highlights-hardware load-lazy">
-                                <h2 style="color: white; padding-inline: 10px;">Hardware</h2>
+                                <h2 style="color: white; padding-inline: 20px; padding-top: 5px;">Hardware</h2>
                             </div>
                             <p>
                                 Working on particle physics detectors involves a blend 
@@ -712,7 +713,109 @@
             <section>
                 <div class="center-content">
                     <h1>On GitHub</h1>
+                    The following is a collection of small pieces of software I developed for solving specifc tasks.
+                    <div class="column3-content">
+                        <div class="textitem">
+                            <h2>HGCAL Testbeam Data Inspector</h2>
+                            <p>
+                                A <a href="https://bokeh.org/">bokeh-based</a> data application to inspect HGCAL data
+                                recorded during from test beams. 
+                            </p>
+                            <a class="title-link-items" href="https://github.com/matt-komm/testbeam-app">
+                                <img src="imgs/icons-github.svg" width="32px" height="32px">
+                                <div>testbeam-app</div>
+                            </a>
+                            
+                        </div>
+                        <div class="textitem">
+                            <h2>ROOT-TensorFlow Plugin</h2>
+                            <p>
+                                C++ plugins to asynchronous read
+                                <a href="https://root.cern/">CERN ROOT files</a> 
+                                directly into TensorFlow (v1) for neural network training.
+                            </p>
+                            <a class="title-link-items" href="https://matt-komm.github.io/ROOT-TF-pipeline">
+                                <img src="imgs/icons-github.svg" width="32px" height="32px">
+                                <div>ROOT-TF-pipeline</div>
+                            </a>
+                        </div>
 
+                        <div class="textitem">
+                            <h2>WbWbX Analysis</h2>
+                            <p>
+                                C++ plugins for CMSSW.
+                            </p>
+                            <a class="title-link-items" href="https://github.com/WbWbX/ChargeReco">
+                                <img src="imgs/icons-github.svg" width="32px" height="32px">
+                                <div>b-jet charge reconstruction</div>
+                            </a>
+                            <a class="title-link-items" href="https://github.com/WbWbX/BChargeTagger">
+                                <img src="imgs/icons-github.svg" width="32px" height="32px">
+                                <div>b-jet charge tagger</div>
+                            </a>
+                        </div>
+
+                        <div class="textitem">
+                            <h2>LLP Analysis</h2>
+                            <p>
+                                C++ plugins for CMSSW.
+                            </p>
+                            <a class="title-link-items" href="https://github.com/LLPDNNX/LLPReco">
+                                <img src="imgs/icons-github.svg" width="32px" height="32px">
+                                <div>Long-lived particle reconstruction</div>
+                            </a>
+                            <a class="title-link-items" href="https://github.com/LLPDNNX/HNLRambo">
+                                <img src="imgs/icons-github.svg" width="32px" height="32px">
+                                <div>HNL particle gun</div>
+                            </a>
+                        </div>
+
+                        <div class="textitem">
+                            <h2>End-to-end vertex reconstruction</h2>
+                            <p>
+                                KDE plugins for TensorFlow.
+                            </p>
+                            <a class="title-link-items" href="https://github.com/VTXNN/E2E">
+                                <img src="imgs/icons-github.svg" width="32px" height="32px">
+                                <div>E2E neural network</div>
+                            </a>
+                        </div>
+
+                        <div class="textitem">
+                            <h2>Dataformat converter</h2>
+                            <p>
+                                C++ plugin-based.
+                            </p>
+                            <a class="title-link-items" href="https://github.com/matt-komm/EDM2PXLIO">
+                                <img src="imgs/icons-github.svg" width="32px" height="32px">
+                                <div>EDM2PXLIO</div>
+                            </a>
+                        </div>
+
+                        <div class="textitem">
+                            <h2>Slim C++ plugin system</h2>
+                            <p>
+                                C++ plugin-based.
+                            </p>
+                            <a class="title-link-items" href="https://github.com/matt-komm/CPX">
+                                <img src="imgs/icons-github.svg" width="32px" height="32px">
+                                <div>CPX</div>
+                            </a>
+                        </div>
+
+
+                        <div class="textitem">
+                            <h2>C++ interface to ME from MadGraph</h2>
+                            <p>
+                                C++ plugin-based.
+                            </p>
+                            <a class="title-link-items" href="https://github.com/matt-komm/MEtest">
+                                <img src="imgs/icons-github.svg" width="32px" height="32px">
+                                <div>ME test</div>
+                            </a>
+                        </div>
+                        
+                    </div>
                 </div>
             </section>
 
@@ -863,20 +966,19 @@
                                         <p>
                                             A distinctive feature of single top quarks 
                                             is their near 100% polarization. 
-                                            Simply put, this means their spin is almost always 
-                                            aligned with their direction of flight. 
+                                            Simply put, this means their <a href="https://en.wikipedia.org/wiki/Spin_(physics)">spin</a>
+                                            is almost always aligned with their direction of flight.
                                             The accompanying figure illustrates an approximation 
                                             of the cosine of the polarization angle. 
-                                            By analyzing the slope of the data points, 
-                                            one can accurately determine the degree of polarization.
+                                            The degree of polarization can be derived from 
+                                            the slope of the data points.
                                         </p><p>
-                                            This high level of polarization provides valuable 
-                                            insights into the properties and behaviors of single top quark.
+                                            The polarization provides valuable insights into 
+                                            the properties and interactions of single top quarks.
                                             Such results can also indirectly exclude certain new theories, 
                                             that postulate new interactions and/or particles.
-                                            If these interactions cause a depolarization of top quarks that 
+                                            If these would cause a depolarization of top quarks that 
                                             contradicts the observed data, they can be ruled out.
-
                                         </p>
                                     </div>
                                     <div style="text-align: center; padding-inline: 20px;">
@@ -892,7 +994,15 @@
                                             <span class="publication-item">Measurement of the differential cross section for \(t\)-channel single-top-quark production at \(\sqrt{s}\) =13 TeV</span>
                                         </p>
                                         <p>
-                                            bla
+                                            Previously, the LHC operated at around half its maximum energy, specifically at 7 and 8 TeV. 
+                                            In 2015, it achieved a significant milestone by increasing its energy to 13 TeV for the first time. 
+                                            This paper presents the initial measurement of single top quark production using the 
+                                            very first data collected at this unprecedented energy level.
+                                        </p>
+                                        <p>
+                                            The figure displays the output score of a boosted decision tree (BDT), 
+                                            which effectively separates single top quark events 
+                                            (shown in red and labeled "\(t\)-channel") from other processes.
                                         </p>
                                     </div>
                                     <div style="text-align: center; padding-inline: 20px;">
