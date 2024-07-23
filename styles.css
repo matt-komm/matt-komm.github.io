@@ -389,6 +389,12 @@ button:hover {
     border-width: 1px;
 }
 
+.conference-name {
+    font-weight: 500;
+    line-height: 1.3;
+    font-size: 1rem;
+}
+
 .cv-list {
     position: relative; 
     padding-top: 10px;
@@ -412,6 +418,12 @@ button:hover {
     position: relative;
     padding-left: 35px;
     padding-right: 40%;
+}
+
+.cv-circle-list[pad="no"] > * {
+    position: relative;
+    padding-left: 35px;
+    padding-right: 20px;
 }
 
 .cv-circle-list[fill="no"] h4::before {
@@ -515,6 +527,25 @@ button:hover {
 .column3-content > div {
     flex: 1; 
     min-width: calc((var(--center-width) * 0.33 - 2 * var(--column-gap)) * 0.8);
+}
+
+.item-markers {
+    /*
+    --size: 50px; 
+    --thickness: 1px;  
+    --gap: 20px; 
+    --color:  #dddddd; 
+    padding: calc(var(--gap) + var(--thickness));
+    outline: var(--thickness) solid var(--color);
+    outline-offset: calc(-1*var(--thickness));
+    mask:
+      conic-gradient(at var(--size) var(--size),#0000 75%,#000 0)
+      0 0/calc(100% - var(--size)) calc(100% - var(--size)),
+      linear-gradient(#000 0 0) content-box;
+    */
+    padding: 20px;
+    box-shadow: 0px 0px 9px -4px #aaaaaa;
+      
 }
 
 .separator-info-text {
