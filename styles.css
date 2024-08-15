@@ -1027,6 +1027,19 @@ button:hover {
     background-image: url(imgs/pub/TOP-13-001_opt.svg);
 }
 
+
+
+.scroll-projects-llp {
+    background-image: none; 
+    background-size: cover;
+}
+
+.scroll-projects-llp.lazy {
+    opacity: 1;
+    background-image: url(imgs/LLP.svg), linear-gradient(90deg, #000000 5%, #7e3d79 30%, #7b4494 60%, #48396d 80%, #000000 100%); 
+}
+
+
 .scroll-contact-box {
     position: relative;
     color: black; 
