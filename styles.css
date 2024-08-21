@@ -542,11 +542,13 @@ button:hover {
       conic-gradient(at var(--size) var(--size),#0000 75%,#000 0)
       0 0/calc(100% - var(--size)) calc(100% - var(--size)),
       linear-gradient(#000 0 0) content-box;
-
-    background-color: #eeeeee44;
-    */
+      box-shadow: 0px 2px 8px -3px #aaaaaa;
+*/
+    
+    
+    background-color: #dddddd33;
     padding: 20px;
-    box-shadow: 0px 2px 8px -3px #aaaaaa;
+    
     
       
 }
