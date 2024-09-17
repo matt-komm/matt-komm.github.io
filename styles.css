@@ -15,7 +15,7 @@ html {
     --action-bw: #eeeeee;
 
     --title-height: calc(550px + 5vw);
-    --separator-height: clamp(250px, 250px + 10vw, 450px);
+    --separator-height: clamp(300px, 300px + 10vw, 500px);
     --separator-height-img: calc(var(--separator-height) * 0.8 - 20px);
     --center-width: 1400px;
     --column-gap: 30px;
@@ -1033,13 +1033,34 @@ button:hover {
 
 .scroll-projects-llp {
     background-image: none; 
-    background-size: cover;
+    background-size: contain;
 }
 
 .scroll-projects-llp.lazy {
     opacity: 1;
-    background-image: url(imgs/LLP.svg), linear-gradient(90deg, #000000 5%, #7e3d79 30%, #7b4494 60%, #48396d 80%, #000000 100%); 
+    background-image: url(imgs/llp.jpg); 
 }
+
+.scroll-projects-anomaly {
+    background-image: none; 
+    background-size: contain;
+}
+
+.scroll-projects-anomaly.lazy {
+    opacity: 1;
+    background-image: url(imgs/anomaly.jpg); 
+}
+
+.scroll-projects-top {
+    background-image: none; 
+    background-size: contain;
+}
+
+.scroll-projects-top.lazy {
+    opacity: 1;
+    background-image: url(imgs/top.jpg); 
+}
+
 
 
 .scroll-contact-box {
