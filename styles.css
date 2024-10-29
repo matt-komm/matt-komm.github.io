@@ -510,7 +510,7 @@ button:hover {
 
 .column2-content > div {
     flex: 1; 
-    min-width: calc((var(--center-width) * 0.5 - 1 * var(--column-gap)) * 0.7);
+    min-width: min(80vw,calc((var(--center-width) * 0.5 - 1 * var(--column-gap)) * 0.7));
 }
 
 .column3-content {
@@ -526,7 +526,7 @@ button:hover {
 
 .column3-content > div {
     flex: 1; 
-    min-width: calc((var(--center-width) * 0.33 - 2 * var(--column-gap)) * 0.8);
+    min-width: min(80vw,calc((var(--center-width) * 0.33 - 2 * var(--column-gap)) * 0.8));
 }
 
 .item-markers {
