@@ -256,7 +256,7 @@ button:hover {
 
 .title-link-items {
     margin: 0;
-    padding: 5px 15px 5px 15px;
+    padding: 5px 10px 5px 10px;
     border-radius: 10px;
     display: flex; 
     flex-direction: row; 
@@ -267,7 +267,7 @@ button:hover {
     color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.05rem;
+    font-size: clamp(1.0rem, 0.75vw + 0.5rem, 1.05rem);
     background: url(imgs/noise2_opt.png), var(--action-color);   
     background-size: 200px, contain;
     border: none;
@@ -283,7 +283,7 @@ button:hover {
 
 .title-link-glas-items {
     margin: 0;
-    padding: 5px 15px 5px 15px;
+    padding: 5px 10px 5px 10px;
     border-radius: 10px;
     display: flex; 
     flex-direction: row; 
@@ -293,7 +293,7 @@ button:hover {
     color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.05rem;
+    font-size: clamp(1.0rem, 0.75vw + 0.5rem, 1.05rem);
     background-image: url(imgs/noise2_opt.png);    
     background-size: 200px;
     background-color: #eeeeeeaa;
