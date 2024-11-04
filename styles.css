@@ -571,6 +571,7 @@ button:hover {
 
 .separator-info-text > p {
     font-weight: 300; 
+    line-height: 1.45rem;
     color: black;
 }
 
