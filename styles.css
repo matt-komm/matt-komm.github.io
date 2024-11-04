@@ -23,7 +23,7 @@ html {
     color: var(--text-color);
 
     font-family:  "Ubuntu", system-ui, "UbuntuFallback", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 95%;
+    font-size: 100%;
     line-height: 1.66rem;
     font-weight: normal;
     font-kerning: normal;
@@ -332,6 +332,13 @@ button:hover {
     row-gap: 10px;
     column-gap: 10px;
     z-index: 10;
+}
+
+@media (max-width: 850px) {
+.mini-nav-layout {
+    visibility: hidden;
+    display: none;
+}
 }
 
 .mini-nav-link {

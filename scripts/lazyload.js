@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             },
             {
-                rootMargin: "-200px 0px 0px 0px"
+                rootMargin: "-300px 0px 0px 0px"
             }
         );
 
