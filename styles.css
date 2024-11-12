@@ -226,12 +226,14 @@ button:hover {
 }
 */
 
-@media (max-width: 550px) {
+@media (max-width: 750px) {
     .textitem {
         padding: 10px 0 10px 0;
         box-shadow: none;
         border: none;
-        box-shadow: 0px -7px 5px -6px #dddddd,0px 7px 5px -6px #cccccc;
+        border-top-color: var(--text-title-color);
+        border-top-width: 2px;
+        border-top-style: solid;
     }
     .textitem::before {
         visibility: hidden;
@@ -487,7 +489,7 @@ button:hover {
     background-size: auto 7em;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 750px) {
     .cv-circle-list > * {
         padding-right: 0px;
     }
@@ -501,8 +503,15 @@ button:hover {
     position: relative;
     max-width: var(--center-width);
     margin-inline: auto;
-    padding-inline: max(20px, calc(20px + 0.1 * (100vw - 900px)));
+    padding-inline: max(20px, calc(20px + 5vw));
 }
+
+@media (max-width: 750px) {
+    .center-content {
+        padding-inline: 20px;
+    }
+}
+
 
 .column2-content {
     display: flex; 
@@ -1115,7 +1124,7 @@ button:hover {
     background-image: url("imgs/icon-email.svg");
 }
 
-@media (max-width: 850px) {
+@media (max-width: 750px) {
     .contact-box {
         padding-right: 10px;
     }
