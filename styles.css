@@ -235,10 +235,12 @@ button:hover {
         border-top-width: 2px;
         border-top-style: solid;
     }
-    .textitem::before {
-        visibility: hidden;
+    .textitem[noborder="1"] {
+        border: none;
     }
 }
+
+
 
 
 .achievement-list {
