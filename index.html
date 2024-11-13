@@ -117,7 +117,7 @@
     </head>
     <body>
         <header class="header fade-bottom" id="header">
-            <div class="logo">Matthias Komm</div>
+            <div class="logo">Dr Matthias Komm</div>
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span
                     class="navicon"></span></label>
@@ -864,7 +864,13 @@
                                 <p>
                                     A set of C++ plugins to asynchronous read and process
                                     <a href="https://root.cern/">CERN ROOT files</a> 
-                                    using TensorFlow (v1) data pipeline for neural network training.
+                                    directly within the multithreaded TensorFlow (v1) data 
+                                    pipeline for neural network training.
+                                </p>
+                                <p>
+                                    Unfortunately, the input pipeline has been significantly
+                                    restructured in TensorFlow v2 such that these plugins 
+                                    won't work with newer versions.
                                 </p>
                                 <a class="title-link-glas-items" href="https://matt-komm.github.io/ROOT-TF-pipeline">
                                     <img src="imgs/icons-github.svg" width="32px" height="32px">
@@ -874,9 +880,13 @@
                             <div class="item-markers">
                                 <h3>B jet charge tagging</h3>
                                 <p>
-                                    C++ plugins for CMSSW.
-
-                                    <a  href="https://github.com/WbWbX/ChargeReco">ChargeReco CMSSW plugins</a>
+                                    This repository shows the training of a 
+                                    deep neural network multiclass classifier.
+                                    The b jet charge is inferred from <a href="https://en.wikipedia.org/wiki/Jet_(particle_physics)">particle jet</a>
+                                    constituents including charged particle tracks, neutral particles in the calorimeters,
+                                    muons, and electrons, as well as secondary vertices formed by at least two tracks.
+                                    The resulting score is charge-symmetric by construction, ie. flipping all
+                                    charges of the tracks will also flip the predicted class.
                                 </p>
                                 <a class="title-link-glas-items" href="https://github.com/WbWbX/BChargeTagger">
                                     <img src="imgs/icons-github.svg" width="32px" height="32px">
@@ -884,12 +894,16 @@
                                 </a>
                             </div>
                             <div class="item-markers">
-                                <h3>LLP Analysis</h3>
+                                <h3>LLP particle gun</h3>
                                 <p>
-                                    C++ plugins for CMSSW.
-                                    <a href="https://github.com/LLPDNNX/LLPReco">LLPReco CMSSW plugin</a>
+                                    A simple CMSSW plugin to artificially generate long-lived particles
+                                    and their isotropic decay. The particle types, lifetime, and decay
+                                    channels can be easily adapted to emulate various signatures.
                                 </p>
-                                
+                                <p>
+                                    This plugin is of great use for generating large samples of artifical 
+                                    particles to improve the generalization of neural network classifiers.
+                                </p>
                                 <a class="title-link-glas-items" href="https://github.com/LLPDNNX/HNLRambo">
                                     <img src="imgs/icons-github.svg" width="32px" height="32px">
                                     <div>HNL particle gun</div>
@@ -898,7 +912,15 @@
                             <div class="item-markers">
                                 <h3>End-to-end vertex reconstruction</h3>
                                 <p>
-                                    KDE plugins for TensorFlow.
+                                    This project targets the reconstruction of the primary interaction vertex
+                                    using a multistage neural network. A novel aspect is the use of a
+                                    custom TensorFlow plugin to generate histograms from tracks 
+                                    with a learnable weight function.
+                                </p>
+                                <p>
+                                    Since the final classifier is ported into FPGAs a high focus on 
+                                    its computational footprint (eg. BRAM, DSP, etc.) and latency 
+                                    is required.
                                 </p>
                                 <a class="title-link-glas-items" href="https://github.com/VTXNN/E2E">
                                     <img src="imgs/icons-github.svg" width="32px" height="32px">
@@ -908,7 +930,9 @@
                             <div class="item-markers">
                                 <h3>Dataformat converter</h3>
                                 <p>
-                                    C++ plugin-based.
+                                    A C++ based CMSSW plugin to convert collections in the CMSSW-internal
+                                    EDM format into the <a href="https://git.rwth-aachen.de/3pia/pxl/pxl">PXLIO format</a> used by the 
+                                    <a href="https://vispa.physik.rwth-aachen.de/">VISPA project</a>. 
                                 </p>
                                 <a class="title-link-glas-items" href="https://github.com/matt-komm/EDM2PXLIO">
                                     <img src="imgs/icons-github.svg" width="32px" height="32px">
@@ -918,7 +942,7 @@
                             <div class="item-markers">
                                 <h3>Slim C++ plugin system</h3>
                                 <p>
-                                    Minimal multi-OS (Windows, Linux, OSX) plugin system for C++. 
+                                    A minimal multi-OS (Windows, Linux, OSX) plugin system for C++.
                                 </p>
                                 <a class="title-link-glas-items" href="https://github.com/matt-komm/CPX">
                                     <img src="imgs/icons-github.svg" width="32px" height="32px">
@@ -928,7 +952,7 @@
                             <div class="item-markers">
                                 <h3>Slim C++ logging system</h3>
                                 <p>
-                                    Minimal logging system for C++. 
+                                    A minimal logging system for C++.
                                 </p>
                                 <a class="title-link-glas-items" href="https://github.com/matt-komm/catlog3">
                                     <img src="imgs/icons-github.svg" width="32px" height="32px">

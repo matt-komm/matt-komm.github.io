@@ -234,6 +234,7 @@ button:hover {
         border-top-color: var(--text-title-color);
         border-top-width: 2px;
         border-top-style: solid;
+
     }
     .textitem[noborder="1"] {
         border: none;
