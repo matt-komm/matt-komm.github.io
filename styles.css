@@ -228,12 +228,17 @@ button:hover {
 
 @media (max-width: 750px) {
     .textitem {
-        padding: 10px 0 10px 0;
+        margin-inline: -20px;
+        
         box-shadow: none;
         border: none;
-        border-top-color: var(--text-title-color);
-        border-top-width: 2px;
+        border-top-color: #dddddd;
+        border-top-width: 1px;
         border-top-style: solid;
+
+        border-bottom-color: #cccccc;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
 
     }
     .textitem[noborder="1"] {
