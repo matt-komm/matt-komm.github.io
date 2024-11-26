@@ -61,6 +61,7 @@ a {
     font-weight: bold;
     padding-inline: 1px;
     text-decoration: none;
+    word-wrap: break-word;
     /*border-bottom: solid 2px var(--text-title-color);*/
 }
 
